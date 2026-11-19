@@ -1,0 +1,19 @@
+{
+  "name": "skybound-pixel-platformer",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Skybound: Pixel Ruins - 2D Retro Pixel Art Platformer Game",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3",
+    "vite": "^6.2.0",
+    "vitest": "^3.0.8"
+  }
+}

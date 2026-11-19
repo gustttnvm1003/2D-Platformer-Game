@@ -1,0 +1,10 @@
+# Dependencies and production build outputs
+node_modules/
+dist/
+
+# Local practicum documents, locks, and OS metadata
+*.docx
+*.pdf
+~$*
+.DS_Store
+Thumbs.db

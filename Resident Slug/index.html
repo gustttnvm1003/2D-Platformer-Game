@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>RESIDENT SLUG: El Pueblo — 2D Pixel Action Shooter</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="game-shell" id="game-shell">
+        <div class="canvas-stage" id="canvas-stage">
+          <canvas id="game-canvas" width="960" height="540"></canvas>
+          <div class="crt-overlay" id="crt-overlay" aria-hidden="true"></div>
+
+          <!-- Top-right Pause Button aligned beside Weapon HUD -->
+          <div class="hud-toolbar" id="hud-toolbar">
+            <button type="button" class="pixel-btn icon-btn" id="btn-pause" title="Pause (Esc / P)" hidden>
+              ❚❚
+            </button>
+          </div>
+
+          <!-- Title Overlay -->
+          <section class="overlay-screen" id="screen-title">
+            <div class="pixel-panel title-panel">
+              <div class="badge-pill">RE4 × METAL SLUG PIXEL SHOOTER</div>
+              <h1 class="game-title">RESIDENT SLUG</h1>
+              <p class="game-subtitle">EL PUEBLO VILLAGE</p>
+
+              <div class="hero-select-grid">
+                <button type="button" class="hero-card selected" id="hero-card-leon" data-hero="leon">
+                  <canvas id="preview-canvas-leon" width="76" height="84"></canvas>
+                  <div class="hero-card-info">
+                    <strong>LEON S. KENNEDY</strong>
+                    <span>HP 5 • Knife Parry • Seimbang</span>
+                  </div>
+                </button>
+                <button type="button" class="hero-card" id="hero-card-ada" data-hero="ada">
+                  <canvas id="preview-canvas-ada" width="76" height="84"></canvas>
+                  <div class="hero-card-info">
+                    <strong>ADA WONG</strong>
+                    <span>HP 4 • Lincah &amp; Kick • +1 Granat</span>
+                  </div>
+                </button>
+              </div>
+
+              <div class="difficulty-selector" role="group" aria-label="Tingkat Kesulitan">
+                <div class="difficulty-header">
+                  <span>KESULITAN</span>
+                  <span class="difficulty-desc" id="difficulty-desc">Standar RE4</span>
+                </div>
+                <div class="difficulty-buttons" id="difficulty-buttons">
+                  <button type="button" class="diff-btn" data-difficulty="easy">EASY</button>
+                  <button type="button" class="diff-btn selected" data-difficulty="normal">NORMAL</button>
+                  <button type="button" class="diff-btn" data-difficulty="hardcore">HARDCORE</button>
+                  <button type="button" class="diff-btn" data-difficulty="professional">PRO</button>
+                </div>
+              </div>
+
+              <div class="menu-actions">
+                <button type="button" class="pixel-btn primary" id="btn-play">
+                  ▶ MULAI MISI DESA
+                </button>
+                <div class="menu-row">
+                  <button type="button" class="pixel-btn" id="btn-levels">
+                    🗺 PILIH STAGE
+                  </button>
+                  <button type="button" class="pixel-btn" id="btn-controls">
+                    ⌨ KONTROL &amp; SENJATA
+                  </button>
+                </div>
+              </div>
+              <div class="title-footer">
+                <span id="total-progress-label">Progres: 0/4 Stage • ★ 0/12 Medallion</span>
+              </div>
+            </div>
+          </section>
+
+          <!-- Level Select Overlay -->
+          <section class="overlay-screen" id="screen-levels" hidden>
+            <div class="pixel-panel wide-panel">
+              <div class="panel-header">
+                <h2>PILIH STAGE — MISI PEDESAAN</h2>
+                <button type="button" class="pixel-btn small" id="btn-levels-back">← KEMBALI</button>
+              </div>
+              <div class="level-grid" id="level-grid"></div>
+            </div>
+          </section>
+
+          <!-- Controls Customizer Overlay -->
+          <section class="overlay-screen" id="screen-controls" hidden>
+            <div class="pixel-panel wide-panel">
+              <div class="panel-header">
+                <h2>PENGATURAN KONTROL (REBIND MANUAL)</h2>
+                <div class="controls-header-actions">
+                  <button type="button" class="pixel-btn small" id="btn-controls-reset">↺ RESET DEFAULT</button>
+                  <button type="button" class="pixel-btn small" id="btn-controls-back">← KEMBALI</button>
+                </div>
+              </div>
+              <p class="controls-hint" id="controls-status">
+                Klik tombol <strong>UBAH</strong> lalu tekan tombol keyboard baru yang diinginkan.
+              </p>
+              <div class="controls-rebind-list" id="controls-list"></div>
+            </div>
+          </section>
+
+          <!-- Merchant Shop Overlay -->
+          <section class="overlay-screen" id="screen-shop" hidden>
+            <div class="pixel-panel shop-panel">
+              <div class="panel-header">
+                <h2>🛒 TOKO MERCHANT — "WHAT'RE YA BUYIN'?"</h2>
+                <div class="shop-header-right">
+                  <span class="shop-wallet" id="shop-wallet-label">0 PTAS</span>
+                  <button type="button" class="pixel-btn small" id="btn-shop-close">✕ TUTUP (B / Esc)</button>
+                </div>
+              </div>
+              <div class="shop-layout">
+                <aside class="shop-sidebar">
+                  <canvas id="preview-canvas-merchant" width="84" height="92"></canvas>
+                  <p class="shop-quote" id="shop-quote">"Got somethin' that might interest ya!"</p>
+                  <div class="shop-player-stats" id="shop-player-stats"></div>
+                </aside>
+                <div class="shop-catalog" id="shop-catalog"></div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Pause Overlay -->
+          <section class="overlay-screen" id="screen-pause" hidden>
+            <div class="pixel-panel compact-panel">
+              <h2>GAME DIJEDA</h2>
+              <p class="muted-text" id="pause-level-name">Stage 1</p>
+              <div class="menu-actions">
+                <button type="button" class="pixel-btn primary" id="btn-resume">▶ LANJUTKAN</button>
+                <button type="button" class="pixel-btn" id="btn-pause-controls">⌨ UBAH KONTROL</button>
+                <button type="button" class="pixel-btn" id="btn-pause-cp">↻ ULANG DARI CHECKPOINT</button>
+                <button type="button" class="pixel-btn" id="btn-pause-restart">⟲ ULANG STAGE</button>
+                <button type="button" class="pixel-btn" id="btn-pause-levels">🗺 PILIH STAGE</button>
+                <button type="button" class="pixel-btn danger" id="btn-pause-title">⌂ MENU UTAMA</button>
+              </div>
+            </div>
+          </section>
+
+          <!-- Level Complete Overlay -->
+          <section class="overlay-screen" id="screen-victory" hidden>
+            <div class="pixel-panel compact-panel">
+              <div class="badge-pill success" id="victory-badge">STAGE SELESAI!</div>
+              <h2 id="victory-title">EL PUEBLO</h2>
+              <div class="stats-box" id="victory-stats"></div>
+              <div class="menu-actions">
+                <button type="button" class="pixel-btn primary" id="btn-next-level">▶ STAGE BERIKUTNYA</button>
+                <button type="button" class="pixel-btn" id="btn-victory-replay">⟲ MAIN LAGI</button>
+                <button type="button" class="pixel-btn" id="btn-victory-title">⌂ MENU UTAMA</button>
+              </div>
+            </div>
+          </section>
+
+          <!-- Game Over Overlay -->
+          <section class="overlay-screen" id="screen-gameover" hidden>
+            <div class="pixel-panel compact-panel">
+              <div class="badge-pill danger">YOU ARE DEAD</div>
+              <h2>TERKALAHKAN!</h2>
+              <p class="muted-text" id="gameover-reason">Nyawa habis. Coba lagi!</p>
+              <div class="stats-box" id="gameover-stats"></div>
+              <div class="menu-actions">
+                <button type="button" class="pixel-btn primary" id="btn-retry-level">↻ COBA LAGI</button>
+                <button type="button" class="pixel-btn" id="btn-gameover-levels">🗺 PILIH STAGE</button>
+                <button type="button" class="pixel-btn" id="btn-gameover-title">⌂ MENU UTAMA</button>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
