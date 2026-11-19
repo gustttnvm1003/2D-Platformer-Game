@@ -50,12 +50,8 @@ export function loadSaveData(): SaveData {
       ),
       selectedDifficulty: diff,
       pesetas: Math.max(0, Number(parsed.pesetas ?? 0)),
-      upgrades: {
-        maxHpLevel: Math.max(0, Math.min(3, Number(parsed.upgrades?.maxHpLevel ?? 0))),
-        damageLevel: Math.max(0, Math.min(3, Number(parsed.upgrades?.damageLevel ?? 0))),
-        agilityLevel: Math.max(0, Math.min(2, Number(parsed.upgrades?.agilityLevel ?? 0))),
-        pouchLevel: Math.max(0, Math.min(2, Number(parsed.upgrades?.pouchLevel ?? 0))),
-      },
+      // Merchant character stat upgrades never persist across full game exit/reload
+      upgrades: createDefaultUpgrades(),
       levels: { ...defaults.levels },
     };
     if (parsed.levels && typeof parsed.levels === 'object') {
@@ -92,12 +88,12 @@ export function saveSelectedDifficulty(difficulty: DifficultyId): void {
   }
 }
 
-export function saveWalletAndUpgrades(pesetas: number, upgrades: PlayerUpgrades): void {
+export function saveWalletAndUpgrades(pesetas: number, _upgrades?: PlayerUpgrades): void {
   if (typeof window === 'undefined' || !window.localStorage) return;
   try {
     const data = loadSaveData();
     data.pesetas = Math.max(0, Math.floor(pesetas));
-    data.upgrades = { ...upgrades };
+    data.upgrades = createDefaultUpgrades();
     window.localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
   } catch {
     // Ignore storage quota errors
@@ -111,7 +107,7 @@ export function saveLevelVictory(
   score: number,
   shards: boolean[],
   pesetas: number,
-  upgrades: PlayerUpgrades
+  _upgrades?: PlayerUpgrades
 ): SaveData {
   const data = loadSaveData();
   const prev = data.levels[levelId] ?? {
@@ -133,7 +129,7 @@ export function saveLevelVictory(
   };
 
   data.pesetas = Math.max(0, Math.floor(pesetas));
-  data.upgrades = { ...upgrades };
+  data.upgrades = createDefaultUpgrades();
 
   if (levelIndex + 1 < LEVELS.length) {
     data.unlockedLevelIndex = Math.max(data.unlockedLevelIndex, levelIndex + 1);

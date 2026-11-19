@@ -462,10 +462,11 @@ async function bootstrap(): Promise<void> {
   byId<HTMLButtonElement>('btn-pause-title').addEventListener('click', () => engine.returnToTitle());
 
   btnNextLevel.addEventListener('click', () => {
-    const nextIndex = engine.getWorld().level.def.index + 1;
-    engine.startLevel(nextIndex);
+    engine.advanceToNextLevel();
   });
-  byId<HTMLButtonElement>('btn-victory-replay').addEventListener('click', () => engine.restartCurrentLevel());
+  byId<HTMLButtonElement>('btn-victory-replay').addEventListener('click', () => {
+    engine.startLevel(engine.getWorld().level.def.index);
+  });
   byId<HTMLButtonElement>('btn-victory-title').addEventListener('click', () => engine.returnToTitle());
 
   byId<HTMLButtonElement>('btn-retry-level').addEventListener('click', () => engine.restartCurrentLevel());

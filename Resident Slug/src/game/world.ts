@@ -192,18 +192,78 @@ export interface WorldInitOptions {
   difficulty?: DifficultyId;
 }
 
+export interface RunProgressState {
+  hero: HeroId;
+  stageIndex: number | null;
+  entryUpgrades: PlayerUpgrades;
+  currentUpgrades: PlayerUpgrades;
+}
+
+export function createRunProgressState(hero: HeroId = 'leon'): RunProgressState {
+  return {
+    hero,
+    stageIndex: null,
+    entryUpgrades: createDefaultUpgrades(),
+    currentUpgrades: createDefaultUpgrades(),
+  };
+}
+
+export function startFreshMissionRun(state: RunProgressState, stageIndex: number): void {
+  state.stageIndex = stageIndex;
+  state.entryUpgrades = createDefaultUpgrades();
+  state.currentUpgrades = createDefaultUpgrades();
+}
+
+export function advanceMissionRun(
+  state: RunProgressState,
+  completedWorld: WorldState,
+  nextStageIndex: number
+): PlayerUpgrades {
+  const carried: PlayerUpgrades = { ...completedWorld.upgrades };
+  state.hero = completedWorld.player.hero;
+  state.stageIndex = nextStageIndex;
+  state.entryUpgrades = { ...carried };
+  state.currentUpgrades = { ...carried };
+  return carried;
+}
+
+export function switchHeroInRun(state: RunProgressState, nextHero: HeroId): void {
+  if (nextHero !== state.hero) {
+    state.hero = nextHero;
+    state.stageIndex = null;
+    state.entryUpgrades = createDefaultUpgrades();
+    state.currentUpgrades = createDefaultUpgrades();
+  }
+}
+
+export function exitMissionRun(state: RunProgressState): void {
+  state.stageIndex = null;
+  state.entryUpgrades = createDefaultUpgrades();
+  state.currentUpgrades = createDefaultUpgrades();
+}
+
+export function createNextMissionWorld(
+  completedWorld: WorldState,
+  nextLevelDef: LevelDefinition
+): WorldState {
+  return createWorld(nextLevelDef, completedWorld.player.hero, {
+    difficulty: completedWorld.difficulty,
+    pesetas: completedWorld.pesetas,
+    upgrades: { ...completedWorld.upgrades },
+  });
+}
+
 export function createWorld(
   levelDef: LevelDefinition,
   hero: HeroId = 'leon',
   options?: WorldInitOptions
 ): WorldState {
-  const save = options?.pesetas !== undefined && options?.upgrades !== undefined && options?.difficulty !== undefined ? null : loadSaveData();
+  const save = options?.pesetas !== undefined && options?.difficulty !== undefined ? null : loadSaveData();
   const difficulty: DifficultyId = options?.difficulty ?? save?.selectedDifficulty ?? 'normal';
+  // Merchant upgrades are strictly run-scoped (never loaded from persistent storage across exits)
   const upgrades: PlayerUpgrades = options?.upgrades
     ? { ...options.upgrades }
-    : save
-      ? { ...save.upgrades }
-      : createDefaultUpgrades();
+    : createDefaultUpgrades();
   const initialPesetas = options?.pesetas ?? save?.pesetas ?? 0;
 
   const level = parseLevel(levelDef, difficulty);

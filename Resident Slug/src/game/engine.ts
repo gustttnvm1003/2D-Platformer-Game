@@ -4,7 +4,7 @@ import { LEVELS } from './levels';
 import { renderWorld } from './renderer';
 import { purchaseShopOffer, ShopOfferId } from './shop';
 import { GameAssets } from './sprites';
-import { loadSaveData, saveLevelVictory, saveSelectedDifficulty } from './storage';
+import { createDefaultUpgrades, loadSaveData, saveLevelVictory, saveSelectedDifficulty } from './storage';
 import {
   DifficultyId,
   FIXED_DT,
@@ -14,7 +14,18 @@ import {
   VIRTUAL_WIDTH,
   WorldState,
 } from './types';
-import { createWorld, respawnPlayerAtCheckpoint, stepWorld } from './world';
+import {
+  advanceMissionRun,
+  createNextMissionWorld,
+  createRunProgressState,
+  createWorld,
+  exitMissionRun,
+  respawnPlayerAtCheckpoint,
+  RunProgressState,
+  startFreshMissionRun,
+  stepWorld,
+  switchHeroInRun,
+} from './world';
 
 export type EngineMode = 'title' | 'playing' | 'paused' | 'shop' | 'victory' | 'gameover';
 
@@ -36,6 +47,7 @@ export class GameEngine {
   private capturingKey = false;
   private selectedHero: HeroId = 'leon';
   private selectedDifficulty: DifficultyId;
+  private runState: RunProgressState;
   private world: WorldState;
   private mode: EngineMode = 'title';
   private rafId: number | null = null;
@@ -76,7 +88,11 @@ export class GameEngine {
     this.callbacks = callbacks;
     this.bindings = loadKeyBindings();
     this.selectedDifficulty = loadSaveData().selectedDifficulty;
-    this.world = createWorld(LEVELS[0], this.selectedHero, { difficulty: this.selectedDifficulty });
+    this.runState = createRunProgressState(this.selectedHero);
+    this.world = createWorld(LEVELS[0], this.selectedHero, {
+      difficulty: this.selectedDifficulty,
+      upgrades: createDefaultUpgrades(),
+    });
 
     this.handleKeyDown = this.handleKeyDown.bind(this);
     this.handleKeyUp = this.handleKeyUp.bind(this);
@@ -170,31 +186,65 @@ export class GameEngine {
     this.selectedDifficulty = difficulty;
     saveSelectedDifficulty(difficulty);
     if (this.mode === 'title') {
-      this.world = createWorld(LEVELS[0], this.selectedHero, { difficulty });
+      this.world = createWorld(LEVELS[0], this.selectedHero, {
+        difficulty,
+        upgrades: createDefaultUpgrades(),
+      });
     }
   }
 
   public setSelectedHero(hero: HeroId): void {
+    switchHeroInRun(this.runState, hero);
     this.selectedHero = hero;
     if (this.mode === 'title') {
-      this.world = createWorld(LEVELS[0], hero, { difficulty: this.selectedDifficulty });
+      this.world = createWorld(LEVELS[0], hero, {
+        difficulty: this.selectedDifficulty,
+        upgrades: createDefaultUpgrades(),
+      });
     }
   }
 
-  public startLevel(levelIndex: number): void {
-    const def = LEVELS[levelIndex] ?? LEVELS[0];
-    this.world = createWorld(def, this.selectedHero, { difficulty: this.selectedDifficulty });
+  private enterPlayingWorld(world: WorldState): void {
+    this.world = world;
     this.clearQueuedInputs();
     this.prevNearMerchant = false;
     this.callbacks.onNearMerchantChange?.(false);
     this.mode = 'playing';
     this.audio.unlock();
-    this.audio.startBgm(def.biome);
+    this.audio.startBgm(world.level.def.biome);
     this.callbacks.onModeChange('playing', this.world);
   }
 
+  public startLevel(levelIndex: number): void {
+    const def = LEVELS[levelIndex] ?? LEVELS[0];
+    startFreshMissionRun(this.runState, def.index);
+    const nextWorld = createWorld(def, this.selectedHero, {
+      difficulty: this.selectedDifficulty,
+      upgrades: createDefaultUpgrades(),
+    });
+    this.enterPlayingWorld(nextWorld);
+  }
+
+  public advanceToNextLevel(): void {
+    const nextIndex = this.world.level.def.index + 1;
+    const nextDef = LEVELS[nextIndex];
+    if (!nextDef) {
+      this.returnToTitle();
+      return;
+    }
+    advanceMissionRun(this.runState, this.world, nextIndex);
+    const nextWorld = createNextMissionWorld(this.world, nextDef);
+    this.enterPlayingWorld(nextWorld);
+  }
+
   public restartCurrentLevel(): void {
-    this.startLevel(this.world.level.def.index);
+    const def = this.world.level.def;
+    this.runState.currentUpgrades = { ...this.runState.entryUpgrades };
+    const retryWorld = createWorld(def, this.selectedHero, {
+      difficulty: this.selectedDifficulty,
+      upgrades: { ...this.runState.entryUpgrades },
+    });
+    this.enterPlayingWorld(retryWorld);
   }
 
   public restartFromCheckpoint(): void {
@@ -241,6 +291,9 @@ export class GameEngine {
 
   public buyShopOffer(offerId: ShopOfferId): { ok: boolean; message: string } {
     const res = purchaseShopOffer(this.world, offerId);
+    if (res.ok) {
+      this.runState.currentUpgrades = { ...this.world.upgrades };
+    }
     while (this.world.pendingSounds.length > 0) {
       const sound = this.world.pendingSounds.shift();
       if (sound) this.audio.playSound(sound);
@@ -249,11 +302,15 @@ export class GameEngine {
   }
 
   public returnToTitle(): void {
+    exitMissionRun(this.runState);
     this.mode = 'title';
     this.audio.stopBgm();
     this.prevNearMerchant = false;
     this.callbacks.onNearMerchantChange?.(false);
-    this.world = createWorld(LEVELS[0], this.selectedHero, { difficulty: this.selectedDifficulty });
+    this.world = createWorld(LEVELS[0], this.selectedHero, {
+      difficulty: this.selectedDifficulty,
+      upgrades: createDefaultUpgrades(),
+    });
     this.callbacks.onModeChange('title', this.world);
   }
 

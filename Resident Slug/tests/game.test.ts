@@ -9,6 +9,7 @@ import { LEVELS, parseLevel } from '../src/game/levels';
 import { getTileAt, isSolidTile, isSpikeTile, overlapsAnySolid, rectsOverlap } from '../src/game/physics';
 import { CHARACTER_FRAMES } from '../src/game/sprites';
 import { purchaseShopOffer } from '../src/game/shop';
+import { createDefaultUpgrades, loadSaveData, saveLevelVictory, saveWalletAndUpgrades } from '../src/game/storage';
 import {
   DIFFICULTY_CONFIG,
   DIFFICULTY_ORDER,
@@ -17,7 +18,16 @@ import {
   InputState,
   TILE_SIZE,
 } from '../src/game/types';
-import { createWorld, stepWorld } from '../src/game/world';
+import {
+  advanceMissionRun,
+  createNextMissionWorld,
+  createRunProgressState,
+  createWorld,
+  exitMissionRun,
+  startFreshMissionRun,
+  stepWorld,
+  switchHeroInRun,
+} from '../src/game/world';
 
 function emptyInput(overrides: Partial<InputState> = {}): InputState {
   return {
@@ -620,5 +630,120 @@ describe('Weapons, Explosives, Medkits, Melee & Ganado Combat', () => {
     // Signature Roundhouse Kick duration matches multi-frame animation
     stepWorld(world, emptyInput({ meleePressed: true }), FIXED_DT);
     expect(world.player.meleeTimer).toBeGreaterThan(0.24);
+  });
+
+  it('carries Merchant stat upgrades across consecutive missions and resets them on stage change, exit, or hero swap', () => {
+    const mockStorage = new Map<string, string>();
+    const prevWindow = (globalThis as { window?: unknown }).window;
+    (globalThis as { window: unknown }).window = {
+      localStorage: {
+        getItem: (k: string) => mockStorage.get(k) ?? null,
+        setItem: (k: string, v: string) => {
+          mockStorage.set(k, v);
+        },
+        removeItem: (k: string) => {
+          mockStorage.delete(k);
+        },
+      },
+    };
+
+    try {
+      const runState = createRunProgressState('leon');
+      startFreshMissionRun(runState, 0);
+
+      // 1. Mission 1: purchase Body Armor, Firepower, Tactical Boots, and Supply Pouch
+      const stage1 = createWorld(LEVELS[0], runState.hero, {
+        pesetas: 2000,
+        upgrades: createDefaultUpgrades(),
+      });
+      expect(purchaseShopOffer(stage1, 'up_hp').ok).toBe(true);
+      expect(purchaseShopOffer(stage1, 'up_dmg').ok).toBe(true);
+      expect(purchaseShopOffer(stage1, 'up_agi').ok).toBe(true);
+      expect(purchaseShopOffer(stage1, 'up_pouch').ok).toBe(true);
+
+      expect(stage1.upgrades).toEqual({
+        maxHpLevel: 1,
+        damageLevel: 1,
+        agilityLevel: 1,
+        pouchLevel: 1,
+      });
+      expect(stage1.player.maxHp).toBe(HERO_CONFIG.leon.maxHp + 1);
+      expect(stage1.player.damageBonus).toBe(1);
+      expect(stage1.player.agilityMult).toBeCloseTo(1.1);
+      expect(stage1.player.maxMedkits).toBe(4);
+
+      // Simulate completing Stage 1 -> storage records level progress & Pesetas, NOT permanent stat upgrades
+      saveWalletAndUpgrades(stage1.pesetas, stage1.upgrades);
+      saveLevelVictory(0, LEVELS[0].id, 45.2, 1200, [true, false, false], stage1.pesetas, stage1.upgrades);
+
+      // 2. Advancing to next consecutive mission (Stage 1 -> Stage 2 -> Stage 3) preserves Merchant stats
+      advanceMissionRun(runState, stage1, 1);
+      const stage2 = createNextMissionWorld(stage1, LEVELS[1]);
+      expect(stage2.upgrades).toEqual({
+        maxHpLevel: 1,
+        damageLevel: 1,
+        agilityLevel: 1,
+        pouchLevel: 1,
+      });
+      expect(stage2.player.maxHp).toBe(HERO_CONFIG.leon.maxHp + 1);
+      expect(stage2.player.damageBonus).toBe(1);
+      expect(stage2.player.agilityMult).toBeCloseTo(1.1);
+      expect(stage2.player.maxMedkits).toBe(4);
+      expect(stage2.player.grenades).toBe(HERO_CONFIG.leon.startGrenades + 2);
+
+      // Buy another Firepower in Stage 2 and advance to Stage 3 -> cumulative upgrades carry forward
+      expect(purchaseShopOffer(stage2, 'up_dmg').ok).toBe(true);
+      advanceMissionRun(runState, stage2, 2);
+      const stage3 = createNextMissionWorld(stage2, LEVELS[2]);
+      expect(stage3.upgrades.maxHpLevel).toBe(1);
+      expect(stage3.upgrades.damageLevel).toBe(2);
+      expect(stage3.player.damageBonus).toBe(2);
+
+      // 3. Switching back to an earlier stage or another stage resets Merchant stats to 0
+      startFreshMissionRun(runState, 0);
+      expect(runState.entryUpgrades).toEqual(createDefaultUpgrades());
+      const backToStage1 = createWorld(LEVELS[0], runState.hero, {
+        upgrades: runState.entryUpgrades,
+      });
+      expect(backToStage1.upgrades).toEqual(createDefaultUpgrades());
+      expect(backToStage1.player.maxHp).toBe(HERO_CONFIG.leon.maxHp);
+      expect(backToStage1.player.damageBonus).toBe(0);
+      expect(backToStage1.player.agilityMult).toBe(1);
+
+      // 4. Exiting mission / closing & reopening game resets Merchant stats while preserving stage unlocks
+      exitMissionRun(runState);
+      expect(runState.currentUpgrades).toEqual(createDefaultUpgrades());
+      const reloadedSave = loadSaveData();
+      expect(reloadedSave.unlockedLevelIndex).toBe(1);
+      expect(reloadedSave.upgrades).toEqual(createDefaultUpgrades());
+
+      const afterExitWorld = createWorld(LEVELS[1], 'leon');
+      expect(afterExitWorld.upgrades).toEqual(createDefaultUpgrades());
+      expect(afterExitWorld.player.maxHp).toBe(HERO_CONFIG.leon.maxHp);
+      expect(afterExitWorld.player.damageBonus).toBe(0);
+
+      // 5. Switching character (Leon -> Ada) resets Merchant stats to Ada's clean base stats
+      startFreshMissionRun(runState, 0);
+      const leonUpgraded = createWorld(LEVELS[0], 'leon', { pesetas: 900, upgrades: createDefaultUpgrades() });
+      expect(purchaseShopOffer(leonUpgraded, 'up_hp').ok).toBe(true);
+      advanceMissionRun(runState, leonUpgraded, 1);
+      expect(runState.entryUpgrades.maxHpLevel).toBe(1);
+
+      switchHeroInRun(runState, 'ada');
+      expect(runState.entryUpgrades).toEqual(createDefaultUpgrades());
+      const adaWorld = createWorld(LEVELS[0], runState.hero, { upgrades: runState.entryUpgrades });
+      expect(adaWorld.upgrades).toEqual(createDefaultUpgrades());
+      expect(adaWorld.player.maxHp).toBe(HERO_CONFIG.ada.maxHp);
+      expect(adaWorld.player.damageBonus).toBe(0);
+      expect(adaWorld.player.agilityMult).toBe(1);
+      expect(adaWorld.player.maxMedkits).toBe(3);
+      expect(adaWorld.player.grenades).toBe(HERO_CONFIG.ada.startGrenades);
+    } finally {
+      if (prevWindow === undefined) {
+        delete (globalThis as { window?: unknown }).window;
+      } else {
+        (globalThis as { window?: unknown }).window = prevWindow;
+      }
+    }
   });
 });
