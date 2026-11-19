@@ -195,6 +195,8 @@ export interface WorldInitOptions {
 export interface RunProgressState {
   hero: HeroId;
   stageIndex: number | null;
+  entryPesetas: number;
+  currentPesetas: number;
   entryUpgrades: PlayerUpgrades;
   currentUpgrades: PlayerUpgrades;
 }
@@ -203,6 +205,8 @@ export function createRunProgressState(hero: HeroId = 'leon'): RunProgressState 
   return {
     hero,
     stageIndex: null,
+    entryPesetas: 0,
+    currentPesetas: 0,
     entryUpgrades: createDefaultUpgrades(),
     currentUpgrades: createDefaultUpgrades(),
   };
@@ -210,6 +214,8 @@ export function createRunProgressState(hero: HeroId = 'leon'): RunProgressState 
 
 export function startFreshMissionRun(state: RunProgressState, stageIndex: number): void {
   state.stageIndex = stageIndex;
+  state.entryPesetas = 0;
+  state.currentPesetas = 0;
   state.entryUpgrades = createDefaultUpgrades();
   state.currentUpgrades = createDefaultUpgrades();
 }
@@ -219,18 +225,28 @@ export function advanceMissionRun(
   completedWorld: WorldState,
   nextStageIndex: number
 ): PlayerUpgrades {
-  const carried: PlayerUpgrades = { ...completedWorld.upgrades };
+  const carriedUpgrades: PlayerUpgrades = { ...completedWorld.upgrades };
+  const carriedPesetas = Math.max(0, Math.floor(completedWorld.pesetas));
   state.hero = completedWorld.player.hero;
   state.stageIndex = nextStageIndex;
-  state.entryUpgrades = { ...carried };
-  state.currentUpgrades = { ...carried };
-  return carried;
+  state.entryPesetas = carriedPesetas;
+  state.currentPesetas = carriedPesetas;
+  state.entryUpgrades = { ...carriedUpgrades };
+  state.currentUpgrades = { ...carriedUpgrades };
+  return carriedUpgrades;
+}
+
+export function retryCurrentMissionRun(state: RunProgressState): void {
+  state.currentPesetas = state.entryPesetas;
+  state.currentUpgrades = { ...state.entryUpgrades };
 }
 
 export function switchHeroInRun(state: RunProgressState, nextHero: HeroId): void {
   if (nextHero !== state.hero) {
     state.hero = nextHero;
     state.stageIndex = null;
+    state.entryPesetas = 0;
+    state.currentPesetas = 0;
     state.entryUpgrades = createDefaultUpgrades();
     state.currentUpgrades = createDefaultUpgrades();
   }
@@ -238,6 +254,8 @@ export function switchHeroInRun(state: RunProgressState, nextHero: HeroId): void
 
 export function exitMissionRun(state: RunProgressState): void {
   state.stageIndex = null;
+  state.entryPesetas = 0;
+  state.currentPesetas = 0;
   state.entryUpgrades = createDefaultUpgrades();
   state.currentUpgrades = createDefaultUpgrades();
 }
@@ -258,13 +276,13 @@ export function createWorld(
   hero: HeroId = 'leon',
   options?: WorldInitOptions
 ): WorldState {
-  const save = options?.pesetas !== undefined && options?.difficulty !== undefined ? null : loadSaveData();
+  const save = options?.difficulty !== undefined ? null : loadSaveData();
   const difficulty: DifficultyId = options?.difficulty ?? save?.selectedDifficulty ?? 'normal';
-  // Merchant upgrades are strictly run-scoped (never loaded from persistent storage across exits)
+  // Merchant upgrades & Pesetas are strictly run-scoped (never loaded from persistent storage across exits)
   const upgrades: PlayerUpgrades = options?.upgrades
     ? { ...options.upgrades }
     : createDefaultUpgrades();
-  const initialPesetas = options?.pesetas ?? save?.pesetas ?? 0;
+  const initialPesetas = Math.max(0, Math.floor(options?.pesetas ?? 0));
 
   const level = parseLevel(levelDef, difficulty);
   const player = createInitialPlayer(hero, level.spawn, upgrades);
@@ -282,6 +300,7 @@ export function createWorld(
     score: 0,
     coins: 0,
     pesetas: initialPesetas,
+    stageEntryPesetas: initialPesetas,
     totalCoins,
     shardsCollected: [false, false, false],
     enemiesDefeated: 0,
@@ -398,6 +417,8 @@ function damagePlayer(
   spawnParticles(world, p.x + p.w / 2, p.y + p.h / 2, 14, ['#ff5b6e', '#ffd447', '#ffffff'], 45, 120, 160, 0.45);
 
   if (p.hp <= 0) {
+    // Coins collected during a failed stage attempt vanish back to stage-entry wallet
+    world.pesetas = world.stageEntryPesetas;
     world.status = 'gameover';
     world.gameOverReason = reason;
     world.pendingSounds.push('gameover');

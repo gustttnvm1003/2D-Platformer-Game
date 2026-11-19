@@ -477,6 +477,7 @@ export interface WorldState {
   score: number;
   coins: number;
   pesetas: number;
+  stageEntryPesetas: number;
   totalCoins: number;
   shardsCollected: boolean[];
   enemiesDefeated: number;

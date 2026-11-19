@@ -21,6 +21,7 @@ import {
   createWorld,
   exitMissionRun,
   respawnPlayerAtCheckpoint,
+  retryCurrentMissionRun,
   RunProgressState,
   startFreshMissionRun,
   stepWorld,
@@ -239,9 +240,10 @@ export class GameEngine {
 
   public restartCurrentLevel(): void {
     const def = this.world.level.def;
-    this.runState.currentUpgrades = { ...this.runState.entryUpgrades };
+    retryCurrentMissionRun(this.runState);
     const retryWorld = createWorld(def, this.selectedHero, {
       difficulty: this.selectedDifficulty,
+      pesetas: this.runState.entryPesetas,
       upgrades: { ...this.runState.entryUpgrades },
     });
     this.enterPlayingWorld(retryWorld);
@@ -292,6 +294,7 @@ export class GameEngine {
   public buyShopOffer(offerId: ShopOfferId): { ok: boolean; message: string } {
     const res = purchaseShopOffer(this.world, offerId);
     if (res.ok) {
+      this.runState.currentPesetas = this.world.pesetas;
       this.runState.currentUpgrades = { ...this.world.upgrades };
     }
     while (this.world.pendingSounds.length > 0) {

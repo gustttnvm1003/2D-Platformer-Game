@@ -27,9 +27,9 @@
   - Agen musuh (`ganado_fork`, `ganado_axe`, dan Boss `boss_salvador`) memiliki 8 status FSM (`patrol`, `chase`, `windup`, `attack`, `recover`, `hurt`, `dying`, `dead`) lengkap dengan sensor tepi & dinding.
   - **Boss Dr. Salvador** masuk fase *Enraged* saat HP $\le 50\%$, dan kapak lempar *Ganado* dapat ditangkis (*parry*) dengan serangan *Melee*.
   - Pilihan kesulitan: **Easy**, **Normal**, **Hardcore**, dan **Professional** yang menskalakan jumlah spawn, HP musuh & bos, kecepatan, serta hadiah *Pesetas*.
-- **Ekonomi *Pesetas*, NPC *The Merchant*, Skenario Stats *Run-Based* & Audio Prosedural:**
+- **Ekonomi *Pesetas*, NPC *The Merchant*, Skenario Stats & Koin *Run-Based* & Audio Prosedural:**
   - *The Merchant* (kebal serangan) menjual *Medkit*, *Grenades*, senjata baru, paket amunisi, serta *upgrade stats* karakter (*Body Armor*, *Firepower*, *Tactical Boots*, *Supply Pouch*).
-  - **Aturan Skenario Stats:** *Upgrade stats* karakter di toko *Merchant* **tetap terbawa saat beranjak ke misi berikutnya** (`Stage 1 → 2 → 3 → 4`), namun **otomatis ter-reset** saat pindah/kembali ke stage lain, keluar dari misi/gim, atau berganti karakter (*Leon ↔ Ada*). Progresi buka stage, skor, medali, serta kontrol kustom tetap tersimpan di `localStorage`.
+  - **Aturan Skenario Stats & Koin (*Pesetas*):** *Upgrade stats* karakter dan saldo koin (*Pesetas*) **tetap terbawa saat beranjak ke misi berikutnya** (`Stage 1 → 2 → 3 → 4`), namun **otomatis ter-reset ke awal** saat pindah/kembali ke stage lain, keluar dari misi/gim, atau berganti karakter (*Leon ↔ Ada*). Jika karakter **mati (*Game Over*)** saat menjalani stage, koin (*Pesetas*) yang baru dikumpulkan pada percobaan tersebut akan hilang dan kembali ke nilai awal saat masuk stage tersebut ketika bermain lagi. Progresi buka stage, skor, medali, serta kontrol kustom tetap tersimpan di `localStorage`.
   - Synthesizer musik tema untuk 4 bioma dan efek suara via `Web Audio API`.
 
 ---

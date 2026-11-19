@@ -49,8 +49,8 @@ export function loadSaveData(): SaveData {
         Math.min(LEVELS.length - 1, Number(parsed.unlockedLevelIndex ?? 0))
       ),
       selectedDifficulty: diff,
-      pesetas: Math.max(0, Number(parsed.pesetas ?? 0)),
-      // Merchant character stat upgrades never persist across full game exit/reload
+      // Merchant stat upgrades & Pesetas are run-scoped (never persist across full game exit/reload)
+      pesetas: 0,
       upgrades: createDefaultUpgrades(),
       levels: { ...defaults.levels },
     };
@@ -88,11 +88,11 @@ export function saveSelectedDifficulty(difficulty: DifficultyId): void {
   }
 }
 
-export function saveWalletAndUpgrades(pesetas: number, _upgrades?: PlayerUpgrades): void {
+export function saveWalletAndUpgrades(_pesetas?: number, _upgrades?: PlayerUpgrades): void {
   if (typeof window === 'undefined' || !window.localStorage) return;
   try {
     const data = loadSaveData();
-    data.pesetas = Math.max(0, Math.floor(pesetas));
+    data.pesetas = 0;
     data.upgrades = createDefaultUpgrades();
     window.localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
   } catch {
@@ -106,7 +106,7 @@ export function saveLevelVictory(
   elapsedTime: number,
   score: number,
   shards: boolean[],
-  pesetas: number,
+  _pesetas?: number,
   _upgrades?: PlayerUpgrades
 ): SaveData {
   const data = loadSaveData();
@@ -128,7 +128,7 @@ export function saveLevelVictory(
     ],
   };
 
-  data.pesetas = Math.max(0, Math.floor(pesetas));
+  data.pesetas = 0;
   data.upgrades = createDefaultUpgrades();
 
   if (levelIndex + 1 < LEVELS.length) {

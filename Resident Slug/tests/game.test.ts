@@ -24,6 +24,7 @@ import {
   createRunProgressState,
   createWorld,
   exitMissionRun,
+  retryCurrentMissionRun,
   startFreshMissionRun,
   stepWorld,
   switchHeroInRun,
@@ -632,7 +633,7 @@ describe('Weapons, Explosives, Medkits, Melee & Ganado Combat', () => {
     expect(world.player.meleeTimer).toBeGreaterThan(0.24);
   });
 
-  it('carries Merchant stat upgrades across consecutive missions and resets them on stage change, exit, or hero swap', () => {
+  it('carries Merchant stats and Pesetas across consecutive missions, resets them on stage change/exit/hero swap, and rolls back stage coins on death', () => {
     const mockStorage = new Map<string, string>();
     const prevWindow = (globalThis as { window?: unknown }).window;
     (globalThis as { window: unknown }).window = {
@@ -647,9 +648,57 @@ describe('Weapons, Explosives, Medkits, Melee & Ganado Combat', () => {
       },
     };
 
+    const idleInput: InputState = {
+      left: false,
+      right: false,
+      up: false,
+      down: false,
+      jumpHeld: false,
+      jumpPressed: false,
+      shootHeld: false,
+      shootPressed: false,
+      meleePressed: false,
+      grenadePressed: false,
+      dashPressed: false,
+      healPressed: false,
+      switchWeaponPressed: false,
+      interactPressed: false,
+    };
+
     try {
       const runState = createRunProgressState('leon');
       startFreshMissionRun(runState, 0);
+
+      // 0. Stage 1 death rollback: coins collected during a failed attempt disappear upon Game Over & retry
+      const stage1Attempt = createWorld(LEVELS[0], runState.hero, {
+        pesetas: runState.entryPesetas,
+        upgrades: runState.entryUpgrades,
+      });
+      expect(stage1Attempt.pesetas).toBe(0);
+      expect(stage1Attempt.stageEntryPesetas).toBe(0);
+      stage1Attempt.level.pickups.push({
+        id: 'test_coin_s1_death',
+        kind: 'coin',
+        x: stage1Attempt.player.x,
+        y: stage1Attempt.player.y,
+        w: 12,
+        h: 12,
+        collected: false,
+        bobOffset: 0,
+      });
+      stepWorld(stage1Attempt, idleInput, FIXED_DT);
+      expect(stage1Attempt.pesetas).toBeGreaterThan(0);
+
+      stage1Attempt.player.hp = 1;
+      stage1Attempt.player.invulnTimer = 0;
+      stage1Attempt.player.y = stage1Attempt.level.height + 30;
+      stepWorld(stage1Attempt, idleInput, FIXED_DT);
+      expect(stage1Attempt.status).toBe('gameover');
+      expect(stage1Attempt.pesetas).toBe(0);
+
+      retryCurrentMissionRun(runState);
+      expect(runState.entryPesetas).toBe(0);
+      expect(runState.currentPesetas).toBe(0);
 
       // 1. Mission 1: purchase Body Armor, Firepower, Tactical Boots, and Supply Pouch
       const stage1 = createWorld(LEVELS[0], runState.hero, {
@@ -671,14 +720,21 @@ describe('Weapons, Explosives, Medkits, Melee & Ganado Combat', () => {
       expect(stage1.player.damageBonus).toBe(1);
       expect(stage1.player.agilityMult).toBeCloseTo(1.1);
       expect(stage1.player.maxMedkits).toBe(4);
+      const stage1RemainingPesetas = stage1.pesetas;
+      expect(stage1RemainingPesetas).toBeGreaterThan(0);
 
-      // Simulate completing Stage 1 -> storage records level progress & Pesetas, NOT permanent stat upgrades
+      // Simulate completing Stage 1 -> storage records level unlocks/medals, NOT run-scoped Pesetas or stat upgrades
       saveWalletAndUpgrades(stage1.pesetas, stage1.upgrades);
       saveLevelVictory(0, LEVELS[0].id, 45.2, 1200, [true, false, false], stage1.pesetas, stage1.upgrades);
 
-      // 2. Advancing to next consecutive mission (Stage 1 -> Stage 2 -> Stage 3) preserves Merchant stats
+      // 2. Advancing to next consecutive mission (Stage 1 -> Stage 2 -> Stage 3) preserves Merchant stats & Pesetas
       advanceMissionRun(runState, stage1, 1);
+      expect(runState.entryPesetas).toBe(stage1RemainingPesetas);
+      expect(runState.currentPesetas).toBe(stage1RemainingPesetas);
+
       const stage2 = createNextMissionWorld(stage1, LEVELS[1]);
+      expect(stage2.pesetas).toBe(stage1RemainingPesetas);
+      expect(stage2.stageEntryPesetas).toBe(stage1RemainingPesetas);
       expect(stage2.upgrades).toEqual({
         maxHpLevel: 1,
         damageLevel: 1,
@@ -691,47 +747,100 @@ describe('Weapons, Explosives, Medkits, Melee & Ganado Combat', () => {
       expect(stage2.player.maxMedkits).toBe(4);
       expect(stage2.player.grenades).toBe(HERO_CONFIG.leon.startGrenades + 2);
 
-      // Buy another Firepower in Stage 2 and advance to Stage 3 -> cumulative upgrades carry forward
+      // 2b. Dying in Stage 2 after picking up extra coins rolls back Pesetas to Stage 2's entry balance
+      const stage2DeathAttempt = createWorld(LEVELS[1], runState.hero, {
+        pesetas: runState.entryPesetas,
+        upgrades: runState.entryUpgrades,
+      });
+      stage2DeathAttempt.level.pickups.push({
+        id: 'test_coin_s2_death',
+        kind: 'coin',
+        x: stage2DeathAttempt.player.x,
+        y: stage2DeathAttempt.player.y,
+        w: 12,
+        h: 12,
+        collected: false,
+        bobOffset: 0,
+      });
+      stepWorld(stage2DeathAttempt, idleInput, FIXED_DT);
+      expect(stage2DeathAttempt.pesetas).toBeGreaterThan(stage1RemainingPesetas);
+
+      stage2DeathAttempt.player.hp = 1;
+      stage2DeathAttempt.player.invulnTimer = 0;
+      stage2DeathAttempt.player.y = stage2DeathAttempt.level.height + 30;
+      stepWorld(stage2DeathAttempt, idleInput, FIXED_DT);
+      expect(stage2DeathAttempt.status).toBe('gameover');
+      expect(stage2DeathAttempt.pesetas).toBe(stage1RemainingPesetas);
+
+      retryCurrentMissionRun(runState);
+      const stage2Retry = createWorld(LEVELS[1], runState.hero, {
+        pesetas: runState.entryPesetas,
+        upgrades: runState.entryUpgrades,
+      });
+      expect(stage2Retry.pesetas).toBe(stage1RemainingPesetas);
+
+      // Buy another Firepower in Stage 2 and advance to Stage 3 -> cumulative upgrades & remaining Pesetas carry forward
       expect(purchaseShopOffer(stage2, 'up_dmg').ok).toBe(true);
+      const stage2RemainingPesetas = stage2.pesetas;
       advanceMissionRun(runState, stage2, 2);
       const stage3 = createNextMissionWorld(stage2, LEVELS[2]);
+      expect(stage3.pesetas).toBe(stage2RemainingPesetas);
+      expect(stage3.stageEntryPesetas).toBe(stage2RemainingPesetas);
       expect(stage3.upgrades.maxHpLevel).toBe(1);
       expect(stage3.upgrades.damageLevel).toBe(2);
       expect(stage3.player.damageBonus).toBe(2);
 
-      // 3. Switching back to an earlier stage or another stage resets Merchant stats to 0
+      // 3. Switching back to an earlier stage or another stage resets Merchant stats & Pesetas to 0
       startFreshMissionRun(runState, 0);
+      expect(runState.entryPesetas).toBe(0);
+      expect(runState.currentPesetas).toBe(0);
       expect(runState.entryUpgrades).toEqual(createDefaultUpgrades());
       const backToStage1 = createWorld(LEVELS[0], runState.hero, {
+        pesetas: runState.entryPesetas,
         upgrades: runState.entryUpgrades,
       });
+      expect(backToStage1.pesetas).toBe(0);
+      expect(backToStage1.stageEntryPesetas).toBe(0);
       expect(backToStage1.upgrades).toEqual(createDefaultUpgrades());
       expect(backToStage1.player.maxHp).toBe(HERO_CONFIG.leon.maxHp);
       expect(backToStage1.player.damageBonus).toBe(0);
       expect(backToStage1.player.agilityMult).toBe(1);
 
-      // 4. Exiting mission / closing & reopening game resets Merchant stats while preserving stage unlocks
+      // 4. Exiting mission / closing & reopening game resets Merchant stats & Pesetas while preserving stage unlocks
       exitMissionRun(runState);
+      expect(runState.entryPesetas).toBe(0);
+      expect(runState.currentPesetas).toBe(0);
       expect(runState.currentUpgrades).toEqual(createDefaultUpgrades());
       const reloadedSave = loadSaveData();
       expect(reloadedSave.unlockedLevelIndex).toBe(1);
+      expect(reloadedSave.pesetas).toBe(0);
       expect(reloadedSave.upgrades).toEqual(createDefaultUpgrades());
 
       const afterExitWorld = createWorld(LEVELS[1], 'leon');
+      expect(afterExitWorld.pesetas).toBe(0);
+      expect(afterExitWorld.stageEntryPesetas).toBe(0);
       expect(afterExitWorld.upgrades).toEqual(createDefaultUpgrades());
       expect(afterExitWorld.player.maxHp).toBe(HERO_CONFIG.leon.maxHp);
       expect(afterExitWorld.player.damageBonus).toBe(0);
 
-      // 5. Switching character (Leon -> Ada) resets Merchant stats to Ada's clean base stats
+      // 5. Switching character (Leon -> Ada) resets Merchant stats & Pesetas to clean base state
       startFreshMissionRun(runState, 0);
       const leonUpgraded = createWorld(LEVELS[0], 'leon', { pesetas: 900, upgrades: createDefaultUpgrades() });
       expect(purchaseShopOffer(leonUpgraded, 'up_hp').ok).toBe(true);
       advanceMissionRun(runState, leonUpgraded, 1);
       expect(runState.entryUpgrades.maxHpLevel).toBe(1);
+      expect(runState.entryPesetas).toBeGreaterThan(0);
 
       switchHeroInRun(runState, 'ada');
+      expect(runState.entryPesetas).toBe(0);
+      expect(runState.currentPesetas).toBe(0);
       expect(runState.entryUpgrades).toEqual(createDefaultUpgrades());
-      const adaWorld = createWorld(LEVELS[0], runState.hero, { upgrades: runState.entryUpgrades });
+      const adaWorld = createWorld(LEVELS[0], runState.hero, {
+        pesetas: runState.entryPesetas,
+        upgrades: runState.entryUpgrades,
+      });
+      expect(adaWorld.pesetas).toBe(0);
+      expect(adaWorld.stageEntryPesetas).toBe(0);
       expect(adaWorld.upgrades).toEqual(createDefaultUpgrades());
       expect(adaWorld.player.maxHp).toBe(HERO_CONFIG.ada.maxHp);
       expect(adaWorld.player.damageBonus).toBe(0);
