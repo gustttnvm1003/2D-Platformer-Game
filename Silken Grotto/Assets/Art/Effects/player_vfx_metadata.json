@@ -1,0 +1,64 @@
+{
+  "name": "player_vfx_sheet",
+  "referenceVideo": "http://www.youtube.com/watch?v=9sdwp4sJlbM",
+  "spriteSheet": "Assets/Art/Effects/player_vfx_sheet.png",
+  "sheetLayout": {
+    "width": 2048,
+    "height": 512,
+    "rows": 2,
+    "columns": 8,
+    "cellWidth": 256,
+    "cellHeight": 256,
+    "totalFrames": 16,
+    "pixelsPerUnit": 115.0
+  },
+  "rendering": {
+    "unityFilterMode": "Bilinear",
+    "unityCompression": "Uncompressed",
+    "mipmapEnabled": false,
+    "alphaIsTransparency": true,
+    "webCanvasSmoothing": true,
+    "cssImageRendering": "auto"
+  },
+  "effects": [
+    {
+      "id": "dash_flash_burst",
+      "spritePrefix": "VFX_DashBurst",
+      "row": 0,
+      "colStart": 0,
+      "colEnd": 7,
+      "frameCount": 8,
+      "fps": 24,
+      "loop": false,
+      "pivotNormalized": { "x": 0.5, "y": 0.5 },
+      "referenceTimestamp": "00:04:57",
+      "notes": "Crisp hand-inked wind burst & staggered velocity lines bursting sharply behind a dashing player and vanishing cleanly in 8 frames."
+    },
+    {
+      "id": "floor_dash_dust",
+      "spritePrefix": "VFX_GroundImpact",
+      "row": 1,
+      "colStart": 0,
+      "colEnd": 3,
+      "frameCount": 4,
+      "fps": 20,
+      "loop": false,
+      "pivotNormalized": { "x": 0.5, "y": 0.125 },
+      "referenceTimestamp": "00:05:00",
+      "notes": "Hand-drawn cel-shaded ground dust plume & crisp diamond light sparks kicked backward on floor dash launch."
+    },
+    {
+      "id": "hero_landing_shockwave",
+      "spritePrefix": "VFX_GroundImpact",
+      "row": 1,
+      "colStart": 4,
+      "colEnd": 7,
+      "frameCount": 4,
+      "fps": 20,
+      "loop": false,
+      "pivotNormalized": { "x": 0.5, "y": 0.125 },
+      "referenceTimestamp": "00:06:18",
+      "notes": "Symmetrical left-and-right roaring ground dust shockwave for heavy HeroLanding impacts."
+    }
+  ]
+}
