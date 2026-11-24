@@ -1,0 +1,1170 @@
+fileFormatVersion: 2
+guid: d99dd26b6070d4944a271617788f8b19
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 140.54
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: winged_pilgrim_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1020
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4515, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0409203558b375a0800000000000000
+      internalID: -6524668759109991409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: winged_pilgrim_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 1020
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4515, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3201118642b6a42d0800000000000000
+      internalID: -3293702373359153117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: winged_pilgrim_Idle_2
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 1020
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4515, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0f6a9d900cc96bc0800000000000000
+      internalID: -3789273308439351539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: winged_pilgrim_Idle_3
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 1020
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4515, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e9baf02283db6700800000000000000
+      internalID: 534753536626047456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: winged_pilgrim_Idle_4
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 1020
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4515, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b395eb955b3a4ff0800000000000000
+      internalID: -51163206887566414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: winged_pilgrim_Idle_5
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 1020
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4515, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e382c7392917e3f00800000000000000
+      internalID: 1098440233478531134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: winged_pilgrim_Idle_6
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 1020
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4515, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7da7b2fa3a9aff1a0800000000000000
+      internalID: -6773508794058310953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: winged_pilgrim_Idle_7
+      rect:
+        serializedVersion: 2
+        x: 2380
+        y: 1020
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4515, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 516cba637b265c710800000000000000
+      internalID: 1712883772320106005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: winged_pilgrim_Idle_8
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 1020
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4515, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: winged_pilgrim_Idle_9
+      rect:
+        serializedVersion: 2
+        x: 3060
+        y: 1020
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4515, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: winged_pilgrim_Idle_10
+      rect:
+        serializedVersion: 2
+        x: 3400
+        y: 1020
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4515, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: winged_pilgrim_Idle_11
+      rect:
+        serializedVersion: 2
+        x: 3740
+        y: 1020
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4515, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: winged_pilgrim_Move_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 680
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4515, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23b073ba967491d60800000000000000
+      internalID: 7861393143721560882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: winged_pilgrim_Move_1
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 680
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4515, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7470ea31d448c6e0800000000000000
+      internalID: -1817126784217353094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: winged_pilgrim_Move_2
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 680
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4515, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f082e639f25abcf0800000000000000
+      internalID: -235784800162381578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: winged_pilgrim_Move_3
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 680
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4515, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d74bc29db71d51030800000000000000
+      internalID: 3464905818186232957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: winged_pilgrim_Move_4
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 680
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4515, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab9cd79f244bcf3b0800000000000000
+      internalID: -5477304847042754118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: winged_pilgrim_Move_5
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 680
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4515, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ddd784919ea6d6b0800000000000000
+      internalID: -5271834373505163820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: winged_pilgrim_Move_6
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 680
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4515, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdf4a04ff1e47d0e0800000000000000
+      internalID: -2245239990075633700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: winged_pilgrim_Move_7
+      rect:
+        serializedVersion: 2
+        x: 2380
+        y: 680
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4515, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c500f48d39dee7d0800000000000000
+      internalID: -2887131452851354167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: winged_pilgrim_Move_8
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 680
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4515, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: winged_pilgrim_Move_9
+      rect:
+        serializedVersion: 2
+        x: 3060
+        y: 680
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4515, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: winged_pilgrim_Move_10
+      rect:
+        serializedVersion: 2
+        x: 3400
+        y: 680
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4515, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: winged_pilgrim_Move_11
+      rect:
+        serializedVersion: 2
+        x: 3740
+        y: 680
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4515, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: winged_pilgrim_Atk_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 340
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4515, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96fe86c142b61e230800000000000000
+      internalID: 3666329374495928169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: winged_pilgrim_Atk_1
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 340
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4515, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c0c781482e2ec300800000000000000
+      internalID: 274207377749164227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: winged_pilgrim_Atk_2
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 340
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4515, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30140014a98078fc0800000000000000
+      internalID: -3492813527394008829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: winged_pilgrim_Atk_3
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 340
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4515, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efb7e1f54bd91fe60800000000000000
+      internalID: 7994344211574848510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: winged_pilgrim_Atk_4
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 340
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4515, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27de903ed30e78210800000000000000
+      internalID: 1335282370945346930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: winged_pilgrim_Atk_5
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 340
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4515, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1186bf4176af07240800000000000000
+      internalID: 4787601724535433233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: winged_pilgrim_Atk_6
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 340
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4515, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 516716514be4cb1a0800000000000000
+      internalID: -6792467602621762027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: winged_pilgrim_Atk_7
+      rect:
+        serializedVersion: 2
+        x: 2380
+        y: 340
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4515, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a5f4aba4fb08fbb0800000000000000
+      internalID: -4902155048913144415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: winged_pilgrim_Atk_8
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 340
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4515, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: winged_pilgrim_Atk_9
+      rect:
+        serializedVersion: 2
+        x: 3060
+        y: 340
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4515, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: winged_pilgrim_Atk_10
+      rect:
+        serializedVersion: 2
+        x: 3400
+        y: 340
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4515, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: winged_pilgrim_Atk_11
+      rect:
+        serializedVersion: 2
+        x: 3740
+        y: 340
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4515, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: winged_pilgrim_Defeat_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4515, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 433e8e2630a9562c0800000000000000
+      internalID: -4438972518368746700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: winged_pilgrim_Defeat_1
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 0
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4515, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78b27871ca1c3d0e0800000000000000
+      internalID: -2246238844254475385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: winged_pilgrim_Defeat_2
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 0
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4515, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5855699d62ca07070800000000000000
+      internalID: 8102165012498765189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: winged_pilgrim_Defeat_3
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 0
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4515, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d2c5338e5b9a0bf0800000000000000
+      internalID: -357302390191963434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: winged_pilgrim_Defeat_4
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 0
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4515, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e709c85c32d8a160800000000000000
+      internalID: 7037105574395840482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: winged_pilgrim_Defeat_5
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 0
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4515, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e9041236b002f750800000000000000
+      internalID: 6337128408187931108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: winged_pilgrim_Defeat_6
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 0
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4515, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cb4dbf2004617880800000000000000
+      internalID: -8614994660219335743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: winged_pilgrim_Defeat_7
+      rect:
+        serializedVersion: 2
+        x: 2380
+        y: 0
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4515, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 843697b8b0ab820c0800000000000000
+      internalID: -4600222460611566776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: winged_pilgrim_Defeat_8
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 0
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4515, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: winged_pilgrim_Defeat_9
+      rect:
+        serializedVersion: 2
+        x: 3060
+        y: 0
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4515, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: winged_pilgrim_Defeat_10
+      rect:
+        serializedVersion: 2
+        x: 3400
+        y: 0
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4515, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: winged_pilgrim_Defeat_11
+      rect:
+        serializedVersion: 2
+        x: 3740
+        y: 0
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4515, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      winged_pilgrim_Atk_0: 3666329374495928169
+      winged_pilgrim_Atk_1: 274207377749164227
+      winged_pilgrim_Atk_10: 0
+      winged_pilgrim_Atk_11: 0
+      winged_pilgrim_Atk_2: -3492813527394008829
+      winged_pilgrim_Atk_3: 7994344211574848510
+      winged_pilgrim_Atk_4: 1335282370945346930
+      winged_pilgrim_Atk_5: 4787601724535433233
+      winged_pilgrim_Atk_6: -6792467602621762027
+      winged_pilgrim_Atk_7: -4902155048913144415
+      winged_pilgrim_Atk_8: 0
+      winged_pilgrim_Atk_9: 0
+      winged_pilgrim_Defeat_0: -4438972518368746700
+      winged_pilgrim_Defeat_1: -2246238844254475385
+      winged_pilgrim_Defeat_10: 0
+      winged_pilgrim_Defeat_11: 0
+      winged_pilgrim_Defeat_2: 8102165012498765189
+      winged_pilgrim_Defeat_3: -357302390191963434
+      winged_pilgrim_Defeat_4: 7037105574395840482
+      winged_pilgrim_Defeat_5: 6337128408187931108
+      winged_pilgrim_Defeat_6: -8614994660219335743
+      winged_pilgrim_Defeat_7: -4600222460611566776
+      winged_pilgrim_Defeat_8: 0
+      winged_pilgrim_Defeat_9: 0
+      winged_pilgrim_Idle_0: -6524668759109991409
+      winged_pilgrim_Idle_1: -3293702373359153117
+      winged_pilgrim_Idle_10: 0
+      winged_pilgrim_Idle_11: 0
+      winged_pilgrim_Idle_2: -3789273308439351539
+      winged_pilgrim_Idle_3: 534753536626047456
+      winged_pilgrim_Idle_4: -51163206887566414
+      winged_pilgrim_Idle_5: 1098440233478531134
+      winged_pilgrim_Idle_6: -6773508794058310953
+      winged_pilgrim_Idle_7: 1712883772320106005
+      winged_pilgrim_Idle_8: 0
+      winged_pilgrim_Idle_9: 0
+      winged_pilgrim_Move_0: 7861393143721560882
+      winged_pilgrim_Move_1: -1817126784217353094
+      winged_pilgrim_Move_10: 0
+      winged_pilgrim_Move_11: 0
+      winged_pilgrim_Move_2: -235784800162381578
+      winged_pilgrim_Move_3: 3464905818186232957
+      winged_pilgrim_Move_4: -5477304847042754118
+      winged_pilgrim_Move_5: -5271834373505163820
+      winged_pilgrim_Move_6: -2245239990075633700
+      winged_pilgrim_Move_7: -2887131452851354167
+      winged_pilgrim_Move_8: 0
+      winged_pilgrim_Move_9: 0
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,1170 @@
+fileFormatVersion: 2
+guid: ffd27e4d6c26a9548b74edd330cecaf8
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 132.6
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: skullwing_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1020
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc57d2e052785e2c0800000000000000
+      internalID: -4402964467463391796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skullwing_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 1020
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e79fc5e8b658b830800000000000000
+      internalID: 4087112013968283618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skullwing_Idle_2
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 1020
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 849e092b5e5858400800000000000000
+      internalID: 325813769644075336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skullwing_Idle_3
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 1020
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7861c04519d17910800000000000000
+      internalID: 1833485208620460154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skullwing_Idle_4
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 1020
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea586cbebf0621420800000000000000
+      internalID: 2599246570054911406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skullwing_Idle_5
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 1020
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ca1e9995d34fb8c0800000000000000
+      internalID: -3981388960887858495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skullwing_Idle_6
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 1020
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4578136c521c0fa70800000000000000
+      internalID: 8858792835020851028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skullwing_Idle_7
+      rect:
+        serializedVersion: 2
+        x: 2380
+        y: 1020
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97af4cda665536160800000000000000
+      internalID: 7017546543863757433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skullwing_Idle_8
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 1020
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skullwing_Idle_9
+      rect:
+        serializedVersion: 2
+        x: 3060
+        y: 1020
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skullwing_Idle_10
+      rect:
+        serializedVersion: 2
+        x: 3400
+        y: 1020
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skullwing_Idle_11
+      rect:
+        serializedVersion: 2
+        x: 3740
+        y: 1020
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skullwing_Move_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 680
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d51f00624927dfb00800000000000000
+      internalID: 863972684143325533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skullwing_Move_1
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 680
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3b76ea480b7869e0800000000000000
+      internalID: -1627915989747860678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skullwing_Move_2
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 680
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6319981c44810ac40800000000000000
+      internalID: 5521439826740089142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skullwing_Move_3
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 680
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0845918dbad4dc680800000000000000
+      internalID: -8733238701941238656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skullwing_Move_4
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 680
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: deba47f129d10baf0800000000000000
+      internalID: -382773454896321555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skullwing_Move_5
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 680
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bc2e0db843ba9d80800000000000000
+      internalID: -8243079042957431626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skullwing_Move_6
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 680
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aac3c94994279b070800000000000000
+      internalID: 8122649063290846378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skullwing_Move_7
+      rect:
+        serializedVersion: 2
+        x: 2380
+        y: 680
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49cf9ba8e6502ee00800000000000000
+      internalID: 1072425633599585428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skullwing_Move_8
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 680
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skullwing_Move_9
+      rect:
+        serializedVersion: 2
+        x: 3060
+        y: 680
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skullwing_Move_10
+      rect:
+        serializedVersion: 2
+        x: 3400
+        y: 680
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skullwing_Move_11
+      rect:
+        serializedVersion: 2
+        x: 3740
+        y: 680
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skullwing_Atk_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 340
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 112862cf80c967240800000000000000
+      internalID: 4789186816159154705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skullwing_Atk_1
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 340
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 015ee47e79fdfba60800000000000000
+      internalID: 7692112532085859600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skullwing_Atk_2
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 340
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 127b9f4abf86202f0800000000000000
+      internalID: -1008127936563661023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skullwing_Atk_3
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 340
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69669eb7d904761c0800000000000000
+      internalID: -4510565456655325546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skullwing_Atk_4
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 340
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f07c62cec79951a20800000000000000
+      internalID: 3032498685920855823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skullwing_Atk_5
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 340
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80057e806120d78a0800000000000000
+      internalID: -6305881609586913272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skullwing_Atk_6
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 340
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06d374c2e1841f520800000000000000
+      internalID: 2734045743219686752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skullwing_Atk_7
+      rect:
+        serializedVersion: 2
+        x: 2380
+        y: 340
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f59bbb01dd0f5ef0800000000000000
+      internalID: -117359873792174604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skullwing_Atk_8
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 340
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skullwing_Atk_9
+      rect:
+        serializedVersion: 2
+        x: 3060
+        y: 340
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skullwing_Atk_10
+      rect:
+        serializedVersion: 2
+        x: 3400
+        y: 340
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skullwing_Atk_11
+      rect:
+        serializedVersion: 2
+        x: 3740
+        y: 340
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skullwing_Defeat_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef9a9d14807992780800000000000000
+      internalID: -8707262342823826946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skullwing_Defeat_1
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 0
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b823c6bede36d2b0800000000000000
+      internalID: -5560187563672393546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skullwing_Defeat_2
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 0
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb5fe2987bd1042a0800000000000000
+      internalID: -6755366766937967173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skullwing_Defeat_3
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 0
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb8811d3269bdc660800000000000000
+      internalID: 7407780793676826811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skullwing_Defeat_4
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 0
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 791388a078f7a00f0800000000000000
+      internalID: -1149966536865730153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skullwing_Defeat_5
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 0
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0ce11f6c39130ea0800000000000000
+      internalID: -5907850538827781107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skullwing_Defeat_6
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 0
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9eacfbc76b1bfbc0800000000000000
+      internalID: -3748372132237889891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skullwing_Defeat_7
+      rect:
+        serializedVersion: 2
+        x: 2380
+        y: 0
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7167648482c9b3b0800000000000000
+      internalID: -5496147995816140419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skullwing_Defeat_8
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 0
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skullwing_Defeat_9
+      rect:
+        serializedVersion: 2
+        x: 3060
+        y: 0
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skullwing_Defeat_10
+      rect:
+        serializedVersion: 2
+        x: 3400
+        y: 0
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skullwing_Defeat_11
+      rect:
+        serializedVersion: 2
+        x: 3740
+        y: 0
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      skullwing_Atk_0: 4789186816159154705
+      skullwing_Atk_1: 7692112532085859600
+      skullwing_Atk_10: 0
+      skullwing_Atk_11: 0
+      skullwing_Atk_2: -1008127936563661023
+      skullwing_Atk_3: -4510565456655325546
+      skullwing_Atk_4: 3032498685920855823
+      skullwing_Atk_5: -6305881609586913272
+      skullwing_Atk_6: 2734045743219686752
+      skullwing_Atk_7: -117359873792174604
+      skullwing_Atk_8: 0
+      skullwing_Atk_9: 0
+      skullwing_Defeat_0: -8707262342823826946
+      skullwing_Defeat_1: -5560187563672393546
+      skullwing_Defeat_10: 0
+      skullwing_Defeat_11: 0
+      skullwing_Defeat_2: -6755366766937967173
+      skullwing_Defeat_3: 7407780793676826811
+      skullwing_Defeat_4: -1149966536865730153
+      skullwing_Defeat_5: -5907850538827781107
+      skullwing_Defeat_6: -3748372132237889891
+      skullwing_Defeat_7: -5496147995816140419
+      skullwing_Defeat_8: 0
+      skullwing_Defeat_9: 0
+      skullwing_Idle_0: -4402964467463391796
+      skullwing_Idle_1: 4087112013968283618
+      skullwing_Idle_10: 0
+      skullwing_Idle_11: 0
+      skullwing_Idle_2: 325813769644075336
+      skullwing_Idle_3: 1833485208620460154
+      skullwing_Idle_4: 2599246570054911406
+      skullwing_Idle_5: -3981388960887858495
+      skullwing_Idle_6: 8858792835020851028
+      skullwing_Idle_7: 7017546543863757433
+      skullwing_Idle_8: 0
+      skullwing_Idle_9: 0
+      skullwing_Move_0: 863972684143325533
+      skullwing_Move_1: -1627915989747860678
+      skullwing_Move_10: 0
+      skullwing_Move_11: 0
+      skullwing_Move_2: 5521439826740089142
+      skullwing_Move_3: -8733238701941238656
+      skullwing_Move_4: -382773454896321555
+      skullwing_Move_5: -8243079042957431626
+      skullwing_Move_6: 8122649063290846378
+      skullwing_Move_7: 1072425633599585428
+      skullwing_Move_8: 0
+      skullwing_Move_9: 0
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
