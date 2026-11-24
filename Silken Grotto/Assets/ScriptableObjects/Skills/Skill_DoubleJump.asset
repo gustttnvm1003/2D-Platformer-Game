@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94e2db90613f0084799630d64e395a74, type: 3}
+  m_Name: Skill_DoubleJump
+  m_EditorClassIdentifier: 
+  skillId: skill_doublejump
+  displayName: Gale Leap
+  description: Weave silk beneath your feet to leap a second time mid-air.
+  skillType: 1
+  icon: {fileID: 21300000, guid: 63ce7a2cd9052be43a50ae5e5c315ba3, type: 3}
+  unlockedByDefault: 0
+  silkCost: 0
+  cooldown: 0.1
+  inputHint: SPACE (Air)
+  powerValue: 1
+  duration: 0.1
+  accentColor: {r: 0.46, g: 0.9, b: 0.78, a: 1}

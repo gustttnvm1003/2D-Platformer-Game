@@ -1,0 +1,335 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32e33326fe6caa44592aa4db5b2b63b5, type: 3}
+  m_Name: Stage_02_Shellwood
+  m_EditorClassIdentifier: 
+  stageId: stage_02_shellwood
+  stageIndex: 2
+  displayName: Shellwood
+  subtitle: Bioluminescent Root Hollow
+  backgroundSprite: {fileID: 21300000, guid: d43b285d4686d184aaeb5604c4571831, type: 3}
+  cliffSprite: {fileID: 21300000, guid: 636fb772c883a114db19c03963792d26, type: 3}
+  platformSprite: {fileID: 21300000, guid: 62f11296dbbdb1840b18f5f74e0c8959, type: 3}
+  supportArchSprite: {fileID: 21300000, guid: 6e1c18a492dd9de49be2fc11aa2d0487, type: 3}
+  ceilingStalactiteSprite: {fileID: 21300000, guid: ccbb09240a018d54985807eb7ef979c6, type: 3}
+  foregroundFrameSprite: {fileID: 21300000, guid: 9c37a12025cec154e91382e6e460f532, type: 3}
+  foregroundFrameTint: {r: 0.18, g: 0.16, b: 0.28, a: 0.92}
+  exitGateSprite: {fileID: 21300000, guid: a508dc114eebdb44c8cbc53fd4f9b865, type: 3}
+  entryGateSprite: {fileID: 21300000, guid: 06edc43caf7972e4084a9780aab0477b, type: 3}
+  cameraClearColor: {r: 0.07, g: 0.12, b: 0.16, a: 1}
+  godRayTint: {r: 0.68, g: 0.56, b: 0.98, a: 0.22}
+  showGodRays: 1
+  weatherType: 2
+  useDarkStoneAcoustics: 0
+  stageBgm: {fileID: 8300000, guid: 98028127c89f2e4419cd28ecb38b24e8, type: 3}
+  originX: 420
+  stageWidth: 144
+  groundY: 0
+  slipperyGround: 0
+  cameraMinBounds: {x: 420, y: -3.8}
+  cameraMaxBounds: {x: 564, y: 16.5}
+  leftSpawnOffset: {x: 3.6, y: 0.02}
+  rightExitOffset: {x: 141.8, y: 0}
+  exitGateVisual: 2
+  nextStageId: stage_03_sands_of_karak
+  entryGateVisual: 1
+  previousStageId: stage_01_weavenest_atla
+  platforms:
+  - label: RootCliff_West
+    localCenter: {x: 14, y: 2.86}
+    size: {x: 7.2, y: 0.68}
+    kind: 1
+    tint: {r: 1, g: 1, b: 1, a: 1}
+  - label: FungusBridge_W1
+    localCenter: {x: 25, y: 1.5}
+    size: {x: 5.8, y: 0.68}
+    kind: 1
+    tint: {r: 1, g: 1, b: 1, a: 1}
+  - label: FungusBridge_WHigh
+    localCenter: {x: 34.5, y: 4.6}
+    size: {x: 6.4, y: 0.68}
+    kind: 1
+    tint: {r: 1, g: 1, b: 1, a: 1}
+  - label: FungusBridge_W2
+    localCenter: {x: 43, y: 1.7}
+    size: {x: 5.8, y: 0.68}
+    kind: 1
+    tint: {r: 1, g: 1, b: 1, a: 1}
+  - label: MidHollow_Terrace
+    localCenter: {x: 56.5, y: 2.86}
+    size: {x: 8, y: 0.68}
+    kind: 1
+    tint: {r: 1, g: 1, b: 1, a: 1}
+  - label: SecretShelf_Shellwood
+    localCenter: {x: 74.5, y: 5.86}
+    size: {x: 12, y: 0.68}
+    kind: 1
+    tint: {r: 1, g: 1, b: 1, a: 1}
+  - label: SecretRoof_Shellwood
+    localCenter: {x: 74.5, y: 9.74}
+    size: {x: 12, y: 0.68}
+    kind: 1
+    tint: {r: 1, g: 1, b: 1, a: 1}
+  - label: CanopyDeck_MidHigh
+    localCenter: {x: 86.5, y: 6.8}
+    size: {x: 6.2, y: 0.68}
+    kind: 1
+    tint: {r: 1, g: 1, b: 1, a: 1}
+  - label: FungusBridge_E1
+    localCenter: {x: 99.5, y: 1.6}
+    size: {x: 5.8, y: 0.68}
+    kind: 1
+    tint: {r: 1, g: 1, b: 1, a: 1}
+  - label: FungusBridge_EHigh
+    localCenter: {x: 109, y: 4.8}
+    size: {x: 6.4, y: 0.68}
+    kind: 1
+    tint: {r: 1, g: 1, b: 1, a: 1}
+  - label: FungusBridge_E2
+    localCenter: {x: 117.5, y: 1.8}
+    size: {x: 5.8, y: 0.68}
+    kind: 1
+    tint: {r: 1, g: 1, b: 1, a: 1}
+  - label: RootCliff_East
+    localCenter: {x: 128, y: 3.16}
+    size: {x: 7.4, y: 0.68}
+    kind: 1
+    tint: {r: 1, g: 1, b: 1, a: 1}
+  - label: CanopyBranch_East
+    localCenter: {x: 135, y: 6.4}
+    size: {x: 5.2, y: 0.68}
+    kind: 1
+    tint: {r: 1, g: 1, b: 1, a: 1}
+  destructibles:
+  - label: Shell_West
+    localSurfacePos: {x: 9.5, y: 0}
+    kind: 8
+    maxHits: 1
+    orbDropCount: 1
+    essencePerOrb: 7
+    rewardSilk: 7
+    blocksMovement: 0
+    flipX: 0
+    scale: 1.04
+  - label: WoodPillar_WestCliff
+    localSurfacePos: {x: 15.6, y: 3.2}
+    kind: 9
+    maxHits: 2
+    orbDropCount: 2
+    essencePerOrb: 7
+    rewardSilk: 8
+    blocksMovement: 0
+    flipX: 0
+    scale: 1
+  - label: Briar_WHigh
+    localSurfacePos: {x: 34.5, y: 4.94}
+    kind: 3
+    maxHits: 2
+    orbDropCount: 2
+    essencePerOrb: 8
+    rewardSilk: 9
+    blocksMovement: 0
+    flipX: 0
+    scale: 0.96
+  - label: Shell_MidHollow
+    localSurfacePos: {x: 58, y: 3.2}
+    kind: 8
+    maxHits: 1
+    orbDropCount: 2
+    essencePerOrb: 8
+    rewardSilk: 8
+    blocksMovement: 0
+    flipX: 1
+    scale: 1.02
+  - label: WoodPillar_SecretTop
+    localSurfacePos: {x: 74.5, y: 10.08}
+    kind: 9
+    maxHits: 2
+    orbDropCount: 2
+    essencePerOrb: 8
+    rewardSilk: 9
+    blocksMovement: 0
+    flipX: 1
+    scale: 1
+  - label: Briar_MidEast
+    localSurfacePos: {x: 91.5, y: 0}
+    kind: 3
+    maxHits: 2
+    orbDropCount: 2
+    essencePerOrb: 8
+    rewardSilk: 9
+    blocksMovement: 0
+    flipX: 0
+    scale: 1.04
+  - label: Briar_EHigh
+    localSurfacePos: {x: 109, y: 5.14}
+    kind: 3
+    maxHits: 2
+    orbDropCount: 2
+    essencePerOrb: 8
+    rewardSilk: 9
+    blocksMovement: 0
+    flipX: 1
+    scale: 0.96
+  - label: Shell_East
+    localSurfacePos: {x: 126.2, y: 3.5}
+    kind: 8
+    maxHits: 1
+    orbDropCount: 2
+    essencePerOrb: 8
+    rewardSilk: 8
+    blocksMovement: 0
+    flipX: 1
+    scale: 1.02
+  - label: WoodPillar_East
+    localSurfacePos: {x: 135.4, y: 0}
+    kind: 9
+    maxHits: 2
+    orbDropCount: 2
+    essencePerOrb: 8
+    rewardSilk: 9
+    blocksMovement: 0
+    flipX: 1
+    scale: 1.05
+  hazards:
+  - label: Shellwood_BriarPitW1
+    localPos: {x: 26.5, y: -2.2}
+    width: 4.4
+  - label: Shellwood_BriarPitW2
+    localPos: {x: 35, y: -2.2}
+    width: 4.6
+  - label: Shellwood_BriarPitW3
+    localPos: {x: 43, y: -2.2}
+    width: 4.4
+  - label: Shellwood_BriarPitE1
+    localPos: {x: 101, y: -2.2}
+    width: 4.4
+  - label: Shellwood_BriarPitE2
+    localPos: {x: 110, y: -2.2}
+    width: 4.8
+  - label: Shellwood_BriarPitE3
+    localPos: {x: 118, y: -2.2}
+    width: 4.2
+  ambientProps: []
+  decors:
+  - label: Shellwood_BiolumFernW
+    localPos: {x: 8, y: 0}
+    assetFileName: Stages/Decor_ShellwoodBiolumFern.png
+    sortLayer: NearBackground
+    sortOrder: 6
+    scale: 0.85
+    flipX: 0
+    tint: {r: 1, g: 1, b: 1, a: 1}
+    swayWithWind: 1
+  - label: Shellwood_GlowShroomsW
+    localPos: {x: 12.8, y: 3.2}
+    assetFileName: Stages/Decor_ShellwoodGlowShrooms.png
+    sortLayer: NearBackground
+    sortOrder: 5
+    scale: 0.88
+    flipX: 1
+    tint: {r: 1, g: 1, b: 1, a: 1}
+    swayWithWind: 0
+  - label: Shellwood_StoneArchPitW
+    localPos: {x: 34.5, y: -2.2}
+    assetFileName: Env_CarvedStoneArch.png
+    sortLayer: NearBackground
+    sortOrder: 4
+    scale: 1.15
+    flipX: 0
+    tint: {r: 0.56, g: 0.62, b: 0.78, a: 0.9}
+    swayWithWind: 0
+  - label: Shellwood_BiolumFernMid
+    localPos: {x: 64.5, y: 0}
+    assetFileName: Stages/Decor_ShellwoodBiolumFern.png
+    sortLayer: NearBackground
+    sortOrder: 6
+    scale: 0.92
+    flipX: 0
+    tint: {r: 1, g: 1, b: 1, a: 1}
+    swayWithWind: 1
+  - label: Shellwood_GlowShroomsMid
+    localPos: {x: 89, y: 0}
+    assetFileName: Stages/Decor_ShellwoodGlowShrooms.png
+    sortLayer: NearBackground
+    sortOrder: 5
+    scale: 0.96
+    flipX: 1
+    tint: {r: 1, g: 1, b: 1, a: 1}
+    swayWithWind: 0
+  - label: Shellwood_StoneArchPitE
+    localPos: {x: 109, y: -2.2}
+    assetFileName: Env_CarvedStoneArch.png
+    sortLayer: NearBackground
+    sortOrder: 4
+    scale: 1.15
+    flipX: 1
+    tint: {r: 0.56, g: 0.62, b: 0.78, a: 0.9}
+    swayWithWind: 0
+  - label: Shellwood_GlowShroomsE
+    localPos: {x: 129, y: 3.5}
+    assetFileName: Stages/Decor_ShellwoodGlowShrooms.png
+    sortLayer: NearBackground
+    sortOrder: 5
+    scale: 0.92
+    flipX: 0
+    tint: {r: 1, g: 1, b: 1, a: 1}
+    swayWithWind: 0
+  - label: Shellwood_BiolumFernE
+    localPos: {x: 137.2, y: 0}
+    assetFileName: Stages/Decor_ShellwoodBiolumFern.png
+    sortLayer: NearBackground
+    sortOrder: 6
+    scale: 0.92
+    flipX: 1
+    tint: {r: 1, g: 1, b: 1, a: 1}
+    swayWithWind: 1
+  pools:
+  - label: Shellwood_VioletBogW
+    localBottomCenter: {x: 17.5, y: 0}
+    width: 4.8
+    waterTint: {r: 0.52, g: 0.44, b: 0.92, a: 0.9}
+    glintTint: {r: 0.74, g: 0.66, b: 1, a: 0.6}
+  - label: Shellwood_VioletBogMid
+    localBottomCenter: {x: 51.5, y: 0}
+    width: 5.6
+    waterTint: {r: 0.52, g: 0.44, b: 0.92, a: 0.9}
+    glintTint: {r: 0.74, g: 0.66, b: 1, a: 0.6}
+  - label: Shellwood_VioletBogEastMid
+    localBottomCenter: {x: 88, y: 0}
+    width: 5.4
+    waterTint: {r: 0.52, g: 0.44, b: 0.92, a: 0.9}
+    glintTint: {r: 0.74, g: 0.66, b: 1, a: 0.6}
+  - label: Shellwood_VioletBogE
+    localBottomCenter: {x: 127.5, y: 0}
+    width: 5
+    waterTint: {r: 0.52, g: 0.44, b: 0.92, a: 0.9}
+    glintTint: {r: 0.74, g: 0.66, b: 1, a: 0.6}
+  faunaSwarms:
+  - label: Shellwood_FirefliesW
+    localCenter: {x: 13.8, y: 4.2}
+    roamRadius: {x: 3.4, y: 1.6}
+    count: 6
+    colorA: {r: 0.78, g: 0.52, b: 1, a: 0.92}
+    colorB: {r: 0.45, g: 0.92, b: 1, a: 0.84}
+  - label: Shellwood_FirefliesMid
+    localCenter: {x: 57, y: 4.8}
+    roamRadius: {x: 3.8, y: 1.8}
+    count: 6
+    colorA: {r: 0.78, g: 0.52, b: 1, a: 0.92}
+    colorB: {r: 0.45, g: 0.92, b: 1, a: 0.84}
+  - label: Shellwood_FirefliesE
+    localCenter: {x: 128, y: 4.8}
+    roamRadius: {x: 3.4, y: 1.6}
+    count: 6
+    colorA: {r: 0.78, g: 0.52, b: 1, a: 0.92}
+    colorB: {r: 0.45, g: 0.92, b: 1, a: 0.84}

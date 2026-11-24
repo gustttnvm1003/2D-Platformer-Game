@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Enemy
+  - Checkpoint
+  - Hazard
+  - Interactable
+  - SecretArea
+  - Breakable
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Ground
+  - OneWayPlatform
+  - Player
+  - Enemy
+  - Hazard
+  - Interactable
+  - BreakableWall
+  - PlayerAttack
+  - EnemyAttack
+  - DestructibleFoliage
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: FarBackground
+    uniqueID: 1001
+    locked: 0
+  - name: MidBackground
+    uniqueID: 1002
+    locked: 0
+  - name: NearBackground
+    uniqueID: 1003
+    locked: 0
+  - name: Environment
+    uniqueID: 1004
+    locked: 0
+  - name: Interactables
+    uniqueID: 1005
+    locked: 0
+  - name: Enemies
+    uniqueID: 1006
+    locked: 0
+  - name: Player
+    uniqueID: 1007
+    locked: 0
+  - name: VFX
+    uniqueID: 1008
+    locked: 0
+  - name: Foreground
+    uniqueID: 1009
+    locked: 0

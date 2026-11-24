@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1795e6ceb2c5a734bb211439f6b54083, type: 3}
+  m_Name: Enemy_CrimsonCaptain
+  m_EditorClassIdentifier: 
+  enemyName: Crimson Canopy Captain
+  isElite: 1
+  maxHealth: 135
+  silkEssenceReward: 95
+  orbDropCount: 7
+  patrolSpeed: 2.8
+  chaseSpeed: 5.2
+  patrolDistance: 4.5
+  idlePauseDuration: 1.15
+  detectRange: 10.5
+  loseTargetRange: 16
+  attackRange: 2.65
+  attackDamage: 2
+  attackKnockbackForce: 7.5
+  windupDuration: 0.36
+  attackActiveDuration: 0.28
+  recoveryDuration: 0.42
+  attackCooldown: 1.05
+  lungeSpeed: 9.2
+  knockbackResistance: 0.45
+  staggerDuration: 0.28

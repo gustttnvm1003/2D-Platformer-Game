@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f71b104c2ae64c46bc962bfff44b7b5, type: 3}
+  m_Name: Item_WeaverRelic
+  m_EditorClassIdentifier: 
+  itemId: item_weaver_relic
+  displayName: Weaver Signet Seal
+  category: 2
+  description: An etched crimson-bronze emblem proving passage across Thornbridge.
+  effectSummary: "Sanctuary Artifact \u2014 stored permanently in your Inventory
+    Pouch."
+  icon: {fileID: 21300000, guid: 6d608e40803d51c4ea3b8697c2d45953, type: 3}
+  maxStack: 1
+  usableFromInventory: 0
+  restoreHealthMasks: 0
+  restoreSilkAmount: 0
+  essenceYield: 0

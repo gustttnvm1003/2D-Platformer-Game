@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1795e6ceb2c5a734bb211439f6b54083, type: 3}
+  m_Name: Enemy_Pondcatcher
+  m_EditorClassIdentifier: 
+  enemyName: Pondcatcher
+  isElite: 0
+  maxHealth: 48
+  silkEssenceReward: 26
+  orbDropCount: 3
+  patrolSpeed: 2.2
+  chaseSpeed: 4.2
+  patrolDistance: 3.2
+  idlePauseDuration: 0.25
+  detectRange: 9.6
+  loseTargetRange: 14
+  attackRange: 4.4
+  attackDamage: 1
+  attackKnockbackForce: 7
+  windupDuration: 0.35
+  attackActiveDuration: 0.3
+  recoveryDuration: 0.5
+  attackCooldown: 0.72
+  lungeSpeed: 8
+  knockbackResistance: 0.18
+  staggerDuration: 0.18

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adf294506f118b845b106dc314ef44c3, type: 3}
+  m_Name: Upgrade_JumpControl
+  m_EditorClassIdentifier: 
+  upgradeType: 3
+  displayName: Acrobatic Grace
+  description: Improves jump height and mid-air agility.
+  maxLevel: 4
+  baseCost: 25
+  costPerLevel: 25
+  bonusPerLevel: 0.65
+  unitLabel: AGI

@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1795e6ceb2c5a734bb211439f6b54083, type: 3}
+  m_Name: Enemy_Mawling
+  m_EditorClassIdentifier: 
+  enemyName: Mawling
+  isElite: 0
+  maxHealth: 24
+  silkEssenceReward: 15
+  orbDropCount: 2
+  patrolSpeed: 3.6
+  chaseSpeed: 6.2
+  patrolDistance: 4.2
+  idlePauseDuration: 0.2
+  detectRange: 8.5
+  loseTargetRange: 12
+  attackRange: 5.4
+  attackDamage: 1
+  attackKnockbackForce: 6.4
+  windupDuration: 0.16
+  attackActiveDuration: 0.44
+  recoveryDuration: 0.34
+  attackCooldown: 0.65
+  lungeSpeed: 12.6
+  knockbackResistance: 0.08
+  staggerDuration: 0.15

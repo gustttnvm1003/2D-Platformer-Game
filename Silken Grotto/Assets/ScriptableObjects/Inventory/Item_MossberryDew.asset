@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f71b104c2ae64c46bc962bfff44b7b5, type: 3}
+  m_Name: Item_MossberryDew
+  m_EditorClassIdentifier: 
+  itemId: item_mossberry_dew
+  displayName: Mossberry Tonic
+  category: 0
+  description: Sweet luminous nectar pressed from cavern mossberries.
+  effectSummary: 'Effect: Restores +1 Mask Health inside Inventory.'
+  icon: {fileID: 21300000, guid: 705c092e3724faa4d962a19ac1473285, type: 3}
+  maxStack: 9
+  usableFromInventory: 1
+  restoreHealthMasks: 1
+  restoreSilkAmount: 0
+  essenceYield: 0

@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46c4f2e3a1ec41e458d421469b21a0b5, type: 3}
+  m_Name: Attack_Combo3
+  m_EditorClassIdentifier: 
+  attackName: Piercing Greatneedle
+  comboStep: 3
+  direction: 0
+  baseDamage: 20
+  animationDuration: 0.3
+  hitboxActiveStart: 0.2
+  hitboxActiveEnd: 0.68
+  cooldown: 0.14
+  hitboxOffset: {x: 1.6, y: 1.05}
+  hitboxSize: {x: 2.55, y: 1.1}
+  knockbackForce: 9.5
+  staggerDuration: 0.3
+  hitStopDuration: 0.048
+  silkGainOnHit: 18
+  locksHorizontalMovement: 1
+  slashAngleDegrees: -5
+  slashScale: 1.05
+  slashTint: {r: 1, g: 1, b: 1, a: 1}
+  overrideSfx: {fileID: 0}

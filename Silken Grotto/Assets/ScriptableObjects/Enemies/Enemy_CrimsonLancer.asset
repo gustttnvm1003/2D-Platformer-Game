@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1795e6ceb2c5a734bb211439f6b54083, type: 3}
+  m_Name: Enemy_CrimsonLancer
+  m_EditorClassIdentifier: 
+  enemyName: Crimson Lancer
+  isElite: 0
+  maxHealth: 45
+  silkEssenceReward: 22
+  orbDropCount: 3
+  patrolSpeed: 2.4
+  chaseSpeed: 4.4
+  patrolDistance: 4.5
+  idlePauseDuration: 1.15
+  detectRange: 7.5
+  loseTargetRange: 11.5
+  attackRange: 2.15
+  attackDamage: 1
+  attackKnockbackForce: 7.5
+  windupDuration: 0.42
+  attackActiveDuration: 0.24
+  recoveryDuration: 0.48
+  attackCooldown: 1.25
+  lungeSpeed: 7.2
+  knockbackResistance: 0.15
+  staggerDuration: 0.28

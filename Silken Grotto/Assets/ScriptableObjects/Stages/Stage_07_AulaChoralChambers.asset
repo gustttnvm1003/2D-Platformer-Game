@@ -1,0 +1,304 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32e33326fe6caa44592aa4db5b2b63b5, type: 3}
+  m_Name: Stage_07_AulaChoralChambers
+  m_EditorClassIdentifier: 
+  stageId: stage_07_aula_choral_chambers
+  stageIndex: 7
+  displayName: Aula Choral Chambers
+  subtitle: Grand Sanctum of the Golden Organ
+  backgroundSprite: {fileID: 21300000, guid: 506f82afab048d0428b0e1fa073d5568, type: 3}
+  cliffSprite: {fileID: 21300000, guid: 1a23ffe5d4ed26e45b8e31b881b2dd8b, type: 3}
+  platformSprite: {fileID: 21300000, guid: 1a33989e7e5c035419f7f1626d5a06df, type: 3}
+  supportArchSprite: {fileID: 21300000, guid: 60c58093df7aaba4b8f273d4c25c0c43, type: 3}
+  ceilingStalactiteSprite: {fileID: 21300000, guid: ccbb09240a018d54985807eb7ef979c6, type: 3}
+  foregroundFrameSprite: {fileID: 21300000, guid: 24aa5dd2747865f4598ab0fc08bc140c, type: 3}
+  foregroundFrameTint: {r: 0.12, g: 0.1, b: 0.14, a: 0.92}
+  exitGateSprite: {fileID: 21300000, guid: 6627f4bb811ea294eacfc8eafe8c7dd5, type: 3}
+  entryGateSprite: {fileID: 21300000, guid: 6627f4bb811ea294eacfc8eafe8c7dd5, type: 3}
+  cameraClearColor: {r: 0.11, g: 0.11, b: 0.15, a: 1}
+  godRayTint: {r: 1, g: 0.92, b: 0.64, a: 0.3}
+  showGodRays: 1
+  weatherType: 7
+  useDarkStoneAcoustics: 1
+  stageBgm: {fileID: 8300000, guid: c2ebb3be36d53c344a0564ddf3915dbd, type: 3}
+  originX: 1420
+  stageWidth: 140
+  groundY: 0
+  slipperyGround: 0
+  cameraMinBounds: {x: 1420, y: -2.2}
+  cameraMaxBounds: {x: 1560, y: 16.5}
+  leftSpawnOffset: {x: 3.6, y: 0.02}
+  rightExitOffset: {x: 137.8, y: 0}
+  exitGateVisual: 6
+  nextStageId: 
+  entryGateVisual: 6
+  previousStageId: stage_06_grand_gate_courtyard
+  platforms:
+  - label: ChoirBalcony_W1
+    localCenter: {x: 14.5, y: 3.6}
+    size: {x: 6.8, y: 0.68}
+    kind: 1
+    tint: {r: 1, g: 1, b: 1, a: 1}
+  - label: OrganLoft_W
+    localCenter: {x: 26, y: 6.8}
+    size: {x: 6, y: 0.68}
+    kind: 1
+    tint: {r: 1, g: 1, b: 1, a: 1}
+  - label: WestChoirDais
+    localCenter: {x: 38, y: 2.86}
+    size: {x: 8.6, y: 0.68}
+    kind: 1
+    tint: {r: 1, g: 1, b: 1, a: 1}
+  - label: ChoirBalcony_MidW
+    localCenter: {x: 50.5, y: 4.8}
+    size: {x: 6.8, y: 0.68}
+    kind: 1
+    tint: {r: 1, g: 1, b: 1, a: 1}
+  - label: SanctumDais_Mid
+    localCenter: {x: 71, y: 1}
+    size: {x: 14, y: 2}
+    kind: 0
+    tint: {r: 1, g: 1, b: 1, a: 1}
+  - label: ChoirBalcony_CenterHigh
+    localCenter: {x: 71, y: 6.4}
+    size: {x: 7.8, y: 0.68}
+    kind: 1
+    tint: {r: 1, g: 1, b: 1, a: 1}
+  - label: SecretShelf_ChoralVault
+    localCenter: {x: 90.5, y: 5.86}
+    size: {x: 12, y: 0.68}
+    kind: 1
+    tint: {r: 1, g: 1, b: 1, a: 1}
+  - label: SecretRoof_ChoralVault
+    localCenter: {x: 90.5, y: 9.74}
+    size: {x: 12, y: 0.68}
+    kind: 1
+    tint: {r: 1, g: 1, b: 1, a: 1}
+  - label: ChoirBalcony_E1
+    localCenter: {x: 105.5, y: 4.2}
+    size: {x: 6.8, y: 0.68}
+    kind: 1
+    tint: {r: 1, g: 1, b: 1, a: 1}
+  - label: OrganLoft_E
+    localCenter: {x: 117, y: 6.8}
+    size: {x: 6, y: 0.68}
+    kind: 1
+    tint: {r: 1, g: 1, b: 1, a: 1}
+  - label: EastChoirDais
+    localCenter: {x: 127, y: 2.86}
+    size: {x: 8.2, y: 0.68}
+    kind: 1
+    tint: {r: 1, g: 1, b: 1, a: 1}
+  destructibles:
+  - label: ChoirBench_W
+    localSurfacePos: {x: 12.5, y: 0}
+    kind: 21
+    maxHits: 2
+    orbDropCount: 2
+    essencePerOrb: 10
+    rewardSilk: 8
+    blocksMovement: 0
+    flipX: 0
+    scale: 1.02
+  - label: Candelabra_W
+    localSurfacePos: {x: 15.5, y: 3.94}
+    kind: 22
+    maxHits: 1
+    orbDropCount: 2
+    essencePerOrb: 10
+    rewardSilk: 9
+    blocksMovement: 0
+    flipX: 0
+    scale: 1
+  - label: CeremonialUrn_MidW
+    localSurfacePos: {x: 39.5, y: 3.2}
+    kind: 23
+    maxHits: 1
+    orbDropCount: 2
+    essencePerOrb: 12
+    rewardSilk: 10
+    blocksMovement: 0
+    flipX: 0
+    scale: 1.06
+  - label: ChoirBench_Mid
+    localSurfacePos: {x: 56.5, y: 0}
+    kind: 21
+    maxHits: 2
+    orbDropCount: 2
+    essencePerOrb: 11
+    rewardSilk: 9
+    blocksMovement: 0
+    flipX: 0
+    scale: 1.04
+  - label: Candelabra_Center
+    localSurfacePos: {x: 71, y: 6.74}
+    kind: 22
+    maxHits: 1
+    orbDropCount: 2
+    essencePerOrb: 12
+    rewardSilk: 10
+    blocksMovement: 0
+    flipX: 0
+    scale: 1.02
+  - label: CeremonialUrn_MidE
+    localSurfacePos: {x: 81.5, y: 0}
+    kind: 23
+    maxHits: 1
+    orbDropCount: 2
+    essencePerOrb: 12
+    rewardSilk: 10
+    blocksMovement: 0
+    flipX: 1
+    scale: 1.06
+  - label: Candelabra_E
+    localSurfacePos: {x: 104.5, y: 4.54}
+    kind: 22
+    maxHits: 1
+    orbDropCount: 2
+    essencePerOrb: 10
+    rewardSilk: 9
+    blocksMovement: 0
+    flipX: 1
+    scale: 1
+  - label: ChoirBench_E
+    localSurfacePos: {x: 128, y: 3.2}
+    kind: 21
+    maxHits: 2
+    orbDropCount: 2
+    essencePerOrb: 10
+    rewardSilk: 8
+    blocksMovement: 0
+    flipX: 1
+    scale: 1.02
+  hazards: []
+  ambientProps:
+  - label: Choral_BellW
+    localPos: {x: 21, y: 12.6}
+    kind: 5
+    scale: 1.15
+    flipX: 0
+  - label: Choral_BellCenter
+    localPos: {x: 71, y: 12.6}
+    kind: 5
+    scale: 1.22
+    flipX: 0
+  - label: Choral_BellE
+    localPos: {x: 118, y: 12.6}
+    kind: 5
+    scale: 1.15
+    flipX: 1
+  - label: Choral_BannerW
+    localPos: {x: 28, y: 10.6}
+    kind: 1
+    scale: 1.15
+    flipX: 0
+  - label: Choral_BannerCenter
+    localPos: {x: 71, y: 10.8}
+    kind: 1
+    scale: 1.22
+    flipX: 0
+  - label: Choral_BannerE
+    localPos: {x: 112, y: 10.6}
+    kind: 1
+    scale: 1.15
+    flipX: 1
+  - label: Choral_GodRayW
+    localPos: {x: 24, y: 8.8}
+    kind: 3
+    scale: 1.35
+    flipX: 0
+  - label: Choral_GodRayCenter
+    localPos: {x: 71, y: 9.2}
+    kind: 3
+    scale: 1.6
+    flipX: 0
+  - label: Choral_GodRayE
+    localPos: {x: 116, y: 8.8}
+    kind: 3
+    scale: 1.35
+    flipX: 1
+  decors:
+  - label: Choral_OrganLeft
+    localPos: {x: 9.2, y: 0}
+    assetFileName: Stages/Decor_ChoralOrganLoft.png
+    sortLayer: NearBackground
+    sortOrder: 3
+    scale: 1.15
+    flipX: 0
+    tint: {r: 1, g: 1, b: 1, a: 1}
+    swayWithWind: 0
+  - label: Choral_OrganMidW
+    localPos: {x: 45.5, y: 0}
+    assetFileName: Stages/Decor_ChoralOrganConsole.png
+    sortLayer: NearBackground
+    sortOrder: 3
+    scale: 1.18
+    flipX: 0
+    tint: {r: 1, g: 1, b: 1, a: 1}
+    swayWithWind: 0
+  - label: Choral_GrandDoorsBg
+    localPos: {x: 71, y: 2}
+    assetFileName: Stages/Gate_ChoralGrandDoors.png
+    sortLayer: NearBackground
+    sortOrder: 3
+    scale: 1.18
+    flipX: 0
+    tint: {r: 0.95, g: 0.9, b: 0.8, a: 0.94}
+    swayWithWind: 0
+  - label: Choral_KnightW
+    localPos: {x: 63, y: 2}
+    assetFileName: Stages/Prop_CrackedStatue.png
+    sortLayer: NearBackground
+    sortOrder: 5
+    scale: 1.15
+    flipX: 0
+    tint: {r: 0.92, g: 0.88, b: 0.8, a: 0.95}
+    swayWithWind: 0
+  - label: Choral_KnightE
+    localPos: {x: 79, y: 2}
+    assetFileName: Stages/Prop_CrackedStatue.png
+    sortLayer: NearBackground
+    sortOrder: 5
+    scale: 1.15
+    flipX: 1
+    tint: {r: 0.92, g: 0.88, b: 0.8, a: 0.95}
+    swayWithWind: 0
+  - label: Choral_OrganRight
+    localPos: {x: 131.5, y: 0}
+    assetFileName: Stages/Decor_ChoralOrganLoft.png
+    sortLayer: NearBackground
+    sortOrder: 3
+    scale: 1.18
+    flipX: 1
+    tint: {r: 1, g: 1, b: 1, a: 1}
+    swayWithWind: 0
+  pools: []
+  faunaSwarms:
+  - label: Choral_GoldenMothsW
+    localCenter: {x: 24, y: 4.4}
+    roamRadius: {x: 3.6, y: 1.8}
+    count: 5
+    colorA: {r: 1, g: 0.92, b: 0.56, a: 0.92}
+    colorB: {r: 1, g: 0.98, b: 0.84, a: 0.78}
+  - label: Choral_GoldenMothsC
+    localCenter: {x: 71, y: 4.6}
+    roamRadius: {x: 4, y: 2}
+    count: 6
+    colorA: {r: 1, g: 0.92, b: 0.56, a: 0.92}
+    colorB: {r: 1, g: 0.98, b: 0.84, a: 0.78}
+  - label: Choral_GoldenMothsE
+    localCenter: {x: 116, y: 4.4}
+    roamRadius: {x: 3.6, y: 1.8}
+    count: 5
+    colorA: {r: 1, g: 0.92, b: 0.56, a: 0.92}
+    colorB: {r: 1, g: 0.98, b: 0.84, a: 0.78}

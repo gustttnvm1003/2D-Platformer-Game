@@ -1,0 +1,312 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32e33326fe6caa44592aa4db5b2b63b5, type: 3}
+  m_Name: Stage_05_MountFay
+  m_EditorClassIdentifier: 
+  stageId: stage_05_mount_fay
+  stageIndex: 5
+  displayName: Mount Fay
+  subtitle: Blizzard Ridge of Frozen Bells
+  backgroundSprite: {fileID: 21300000, guid: 0e61ac23645773e4cb4ed5867a4394e7, type: 3}
+  cliffSprite: {fileID: 21300000, guid: 06f41399617ad9c4d9a624f41d2d7b60, type: 3}
+  platformSprite: {fileID: 21300000, guid: edf0e5b0c818d924996c20969b686217, type: 3}
+  supportArchSprite: {fileID: 21300000, guid: 60c58093df7aaba4b8f273d4c25c0c43, type: 3}
+  ceilingStalactiteSprite: {fileID: 21300000, guid: a665396aa7b04e8429c19948954a924b, type: 3}
+  foregroundFrameSprite: {fileID: 21300000, guid: 24aa5dd2747865f4598ab0fc08bc140c, type: 3}
+  foregroundFrameTint: {r: 0.18, g: 0.26, b: 0.36, a: 0.92}
+  exitGateSprite: {fileID: 21300000, guid: a21f7f5181b064c4882958dddc58fa8d, type: 3}
+  entryGateSprite: {fileID: 21300000, guid: d3733396368611945a3f43c38a573e41, type: 3}
+  cameraClearColor: {r: 0.14, g: 0.22, b: 0.32, a: 1}
+  godRayTint: {r: 0.84, g: 0.94, b: 1, a: 0.2}
+  showGodRays: 1
+  weatherType: 5
+  useDarkStoneAcoustics: 1
+  stageBgm: {fileID: 8300000, guid: 95bfbb41b441dd441acdaaa73374a1f6, type: 3}
+  originX: 1020
+  stageWidth: 144
+  groundY: 0
+  slipperyGround: 1
+  cameraMinBounds: {x: 1020, y: -2.2}
+  cameraMaxBounds: {x: 1164, y: 16.5}
+  leftSpawnOffset: {x: 3.6, y: 0.02}
+  rightExitOffset: {x: 141.8, y: 0}
+  exitGateVisual: 5
+  nextStageId: stage_06_grand_gate_courtyard
+  entryGateVisual: 4
+  previousStageId: stage_04_bellhart
+  platforms:
+  - label: IceCliff_West
+    localCenter: {x: 14.5, y: 2.86}
+    size: {x: 7, y: 0.68}
+    kind: 3
+    tint: {r: 1, g: 1, b: 1, a: 1}
+  - label: SnowLedge_1
+    localCenter: {x: 25, y: 4.8}
+    size: {x: 5.8, y: 0.72}
+    kind: 3
+    tint: {r: 1, g: 1, b: 1, a: 1}
+  - label: IcePeak_West
+    localCenter: {x: 36, y: 7.54}
+    size: {x: 7, y: 0.72}
+    kind: 3
+    tint: {r: 1, g: 1, b: 1, a: 1}
+  - label: SnowLedge_Mid1
+    localCenter: {x: 47.5, y: 4.6}
+    size: {x: 6, y: 0.72}
+    kind: 3
+    tint: {r: 1, g: 1, b: 1, a: 1}
+  - label: IceRidge_Center
+    localCenter: {x: 59, y: 2.86}
+    size: {x: 8.2, y: 0.68}
+    kind: 3
+    tint: {r: 1, g: 1, b: 1, a: 1}
+  - label: SecretShelf_GlacialVault
+    localCenter: {x: 76.5, y: 5.86}
+    size: {x: 12, y: 0.68}
+    kind: 3
+    tint: {r: 1, g: 1, b: 1, a: 1}
+  - label: SecretRoof_GlacialVault
+    localCenter: {x: 76.5, y: 9.74}
+    size: {x: 12, y: 0.68}
+    kind: 3
+    tint: {r: 1, g: 1, b: 1, a: 1}
+  - label: GlacialArch_High
+    localCenter: {x: 89, y: 6.8}
+    size: {x: 6.4, y: 0.72}
+    kind: 3
+    tint: {r: 1, g: 1, b: 1, a: 1}
+  - label: IceCliff_EastMid
+    localCenter: {x: 101, y: 3.06}
+    size: {x: 7.8, y: 0.68}
+    kind: 3
+    tint: {r: 1, g: 1, b: 1, a: 1}
+  - label: SnowLedge_East
+    localCenter: {x: 112.5, y: 5.2}
+    size: {x: 6, y: 0.72}
+    kind: 3
+    tint: {r: 1, g: 1, b: 1, a: 1}
+  - label: IceSummit_East
+    localCenter: {x: 123.5, y: 7.94}
+    size: {x: 6.6, y: 0.72}
+    kind: 3
+    tint: {r: 1, g: 1, b: 1, a: 1}
+  - label: IceStep_Exit
+    localCenter: {x: 133.5, y: 2.86}
+    size: {x: 6.8, y: 0.68}
+    kind: 3
+    tint: {r: 1, g: 1, b: 1, a: 1}
+  destructibles:
+  - label: IceCluster_West
+    localSurfacePos: {x: 10, y: 0}
+    kind: 16
+    maxHits: 2
+    orbDropCount: 2
+    essencePerOrb: 8
+    rewardSilk: 8
+    blocksMovement: 0
+    flipX: 0
+    scale: 1.08
+  - label: FrozenPost_CliffW
+    localSurfacePos: {x: 16, y: 3.2}
+    kind: 17
+    maxHits: 1
+    orbDropCount: 1
+    essencePerOrb: 8
+    rewardSilk: 7
+    blocksMovement: 0
+    flipX: 0
+    scale: 0.96
+  - label: IceCluster_PeakW
+    localSurfacePos: {x: 36.5, y: 7.9}
+    kind: 16
+    maxHits: 2
+    orbDropCount: 2
+    essencePerOrb: 10
+    rewardSilk: 10
+    blocksMovement: 0
+    flipX: 0
+    scale: 1.05
+  - label: IceBarrier_MidW
+    localSurfacePos: {x: 49, y: 0}
+    kind: 16
+    maxHits: 2
+    orbDropCount: 2
+    essencePerOrb: 9
+    rewardSilk: 10
+    blocksMovement: 0
+    flipX: 1
+    scale: 1.15
+  - label: FrozenPost_Mid
+    localSurfacePos: {x: 60.2, y: 3.2}
+    kind: 17
+    maxHits: 1
+    orbDropCount: 2
+    essencePerOrb: 8
+    rewardSilk: 8
+    blocksMovement: 0
+    flipX: 0
+    scale: 1
+  - label: IceCluster_SecretTop
+    localSurfacePos: {x: 76.5, y: 10.08}
+    kind: 16
+    maxHits: 2
+    orbDropCount: 2
+    essencePerOrb: 10
+    rewardSilk: 10
+    blocksMovement: 0
+    flipX: 1
+    scale: 1.06
+  - label: IceBarrier_EastMid
+    localSurfacePos: {x: 102.5, y: 3.4}
+    kind: 16
+    maxHits: 2
+    orbDropCount: 2
+    essencePerOrb: 9
+    rewardSilk: 9
+    blocksMovement: 0
+    flipX: 0
+    scale: 1.04
+  - label: FrozenPost_SummitE
+    localSurfacePos: {x: 124.2, y: 8.3}
+    kind: 17
+    maxHits: 1
+    orbDropCount: 2
+    essencePerOrb: 8
+    rewardSilk: 8
+    blocksMovement: 0
+    flipX: 1
+    scale: 0.98
+  - label: IceCluster_Exit
+    localSurfacePos: {x: 135.2, y: 3.2}
+    kind: 16
+    maxHits: 2
+    orbDropCount: 2
+    essencePerOrb: 9
+    rewardSilk: 9
+    blocksMovement: 0
+    flipX: 0
+    scale: 1.02
+  hazards: []
+  ambientProps:
+  - label: Fay_LanternA
+    localPos: {x: 11, y: 2.2}
+    kind: 0
+    scale: 1.15
+    flipX: 0
+  - label: Fay_LanternMid
+    localPos: {x: 63.5, y: 2.2}
+    kind: 0
+    scale: 1.18
+    flipX: 1
+  - label: Fay_LanternB
+    localPos: {x: 89, y: 9.2}
+    kind: 0
+    scale: 1.15
+    flipX: 1
+  - label: Fay_LanternC
+    localPos: {x: 136, y: 2.2}
+    kind: 0
+    scale: 1.15
+    flipX: 0
+  decors:
+  - label: Fay_RootsW
+    localPos: {x: 8, y: 0}
+    assetFileName: Stages/Decor_MountFayRoots.png
+    sortLayer: NearBackground
+    sortOrder: 4
+    scale: 1.1
+    flipX: 0
+    tint: {r: 1, g: 1, b: 1, a: 1}
+    swayWithWind: 0
+  - label: Fay_BellArchW
+    localPos: {x: 27.5, y: 0}
+    assetFileName: Stages/Decor_MountFayBellArch.png
+    sortLayer: NearBackground
+    sortOrder: 3
+    scale: 1.3
+    flipX: 0
+    tint: {r: 0.92, g: 0.96, b: 1, a: 0.94}
+    swayWithWind: 0
+  - label: Fay_BellArchMid
+    localPos: {x: 67, y: 0}
+    assetFileName: Stages/Decor_MountFayBellArch.png
+    sortLayer: NearBackground
+    sortOrder: 3
+    scale: 1.32
+    flipX: 1
+    tint: {r: 0.92, g: 0.96, b: 1, a: 0.94}
+    swayWithWind: 0
+  - label: Fay_RootsMidE
+    localPos: {x: 105, y: 0}
+    assetFileName: Stages/Decor_MountFayRoots.png
+    sortLayer: NearBackground
+    sortOrder: 4
+    scale: 1.15
+    flipX: 1
+    tint: {r: 1, g: 1, b: 1, a: 1}
+    swayWithWind: 0
+  - label: Fay_RootsE
+    localPos: {x: 137, y: 0}
+    assetFileName: Stages/Decor_MountFayRoots.png
+    sortLayer: NearBackground
+    sortOrder: 4
+    scale: 1.15
+    flipX: 0
+    tint: {r: 1, g: 1, b: 1, a: 1}
+    swayWithWind: 0
+  - label: Fay_TrailPostA
+    localPos: {x: 11, y: 0}
+    assetFileName: Stages/Prop_FrozenPost.png
+    sortLayer: NearBackground
+    sortOrder: 6
+    scale: 1.05
+    flipX: 0
+    tint: {r: 1, g: 1, b: 1, a: 1}
+    swayWithWind: 0
+  - label: Fay_TrailPostB
+    localPos: {x: 63.5, y: 0}
+    assetFileName: Stages/Prop_FrozenPost.png
+    sortLayer: NearBackground
+    sortOrder: 6
+    scale: 1.05
+    flipX: 0
+    tint: {r: 1, g: 1, b: 1, a: 1}
+    swayWithWind: 0
+  - label: Fay_TrailPostC
+    localPos: {x: 136, y: 0}
+    assetFileName: Stages/Prop_FrozenPost.png
+    sortLayer: NearBackground
+    sortOrder: 6
+    scale: 1.05
+    flipX: 1
+    tint: {r: 1, g: 1, b: 1, a: 1}
+    swayWithWind: 0
+  pools: []
+  faunaSwarms:
+  - label: Fay_FrostWispsA
+    localCenter: {x: 11.2, y: 2.8}
+    roamRadius: {x: 2.6, y: 1.2}
+    count: 4
+    colorA: {r: 0.74, g: 0.94, b: 1, a: 0.9}
+    colorB: {r: 1, g: 0.86, b: 0.6, a: 0.78}
+  - label: Fay_FrostWispsMid
+    localCenter: {x: 63.5, y: 3}
+    roamRadius: {x: 2.8, y: 1.4}
+    count: 4
+    colorA: {r: 0.74, g: 0.94, b: 1, a: 0.9}
+    colorB: {r: 1, g: 0.86, b: 0.6, a: 0.78}
+  - label: Fay_FrostWispsB
+    localCenter: {x: 136, y: 2.8}
+    roamRadius: {x: 2.6, y: 1.2}
+    count: 4
+    colorA: {r: 0.74, g: 0.94, b: 1, a: 0.9}
+    colorB: {r: 1, g: 0.86, b: 0.6, a: 0.78}

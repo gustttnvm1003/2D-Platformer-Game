@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1795e6ceb2c5a734bb211439f6b54083, type: 3}
+  m_Name: Enemy_PharlidDiver
+  m_EditorClassIdentifier: 
+  enemyName: Pharlid
+  isElite: 0
+  maxHealth: 32
+  silkEssenceReward: 20
+  orbDropCount: 2
+  patrolSpeed: 5.4
+  chaseSpeed: 7.6
+  patrolDistance: 4.6
+  idlePauseDuration: 0.25
+  detectRange: 8.6
+  loseTargetRange: 13
+  attackRange: 4.4
+  attackDamage: 1
+  attackKnockbackForce: 6.2
+  windupDuration: 0.25
+  attackActiveDuration: 0.3
+  recoveryDuration: 0.34
+  attackCooldown: 0.72
+  lungeSpeed: 12.2
+  knockbackResistance: 0.08
+  staggerDuration: 0.16

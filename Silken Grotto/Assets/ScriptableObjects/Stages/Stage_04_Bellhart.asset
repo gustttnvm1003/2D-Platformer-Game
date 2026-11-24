@@ -1,0 +1,346 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32e33326fe6caa44592aa4db5b2b63b5, type: 3}
+  m_Name: Stage_04_Bellhart
+  m_EditorClassIdentifier: 
+  stageId: stage_04_bellhart
+  stageIndex: 4
+  displayName: Bellhart
+  subtitle: Silent Town of Hanging Bells
+  backgroundSprite: {fileID: 21300000, guid: a2069dfaec3eefa41b146d26cf7eb8ad, type: 3}
+  cliffSprite: {fileID: 21300000, guid: 4ae5ab02f31cb8f46896e0d3604fc637, type: 3}
+  platformSprite: {fileID: 21300000, guid: d1c2f530dd0b7bc41acedd28a9c2d660, type: 3}
+  supportArchSprite: {fileID: 21300000, guid: 60c58093df7aaba4b8f273d4c25c0c43, type: 3}
+  ceilingStalactiteSprite: {fileID: 21300000, guid: ccbb09240a018d54985807eb7ef979c6, type: 3}
+  foregroundFrameSprite: {fileID: 21300000, guid: 24aa5dd2747865f4598ab0fc08bc140c, type: 3}
+  foregroundFrameTint: {r: 0.14, g: 0.17, b: 0.26, a: 0.92}
+  exitGateSprite: {fileID: 21300000, guid: d3733396368611945a3f43c38a573e41, type: 3}
+  entryGateSprite: {fileID: 21300000, guid: 58a37f4929bac2846a4413c9c93f7876, type: 3}
+  cameraClearColor: {r: 0.1, g: 0.13, b: 0.2, a: 1}
+  godRayTint: {r: 0.76, g: 0.84, b: 0.96, a: 0.16}
+  showGodRays: 0
+  weatherType: 4
+  useDarkStoneAcoustics: 1
+  stageBgm: {fileID: 8300000, guid: e63c54a8a321bd945a5547bce4d0ba1c, type: 3}
+  originX: 820
+  stageWidth: 148
+  groundY: 0
+  slipperyGround: 0
+  cameraMinBounds: {x: 820, y: -2.2}
+  cameraMaxBounds: {x: 968, y: 16.5}
+  leftSpawnOffset: {x: 3.6, y: 0.02}
+  rightExitOffset: {x: 145.8, y: 0}
+  exitGateVisual: 4
+  nextStageId: stage_05_mount_fay
+  entryGateVisual: 3
+  previousStageId: stage_03_sands_of_karak
+  platforms:
+  - label: ShellRoof_West
+    localCenter: {x: 15, y: 2.96}
+    size: {x: 7.6, y: 0.68}
+    kind: 1
+    tint: {r: 1, g: 1, b: 1, a: 1}
+  - label: TownBridge_W
+    localCenter: {x: 26, y: 4.4}
+    size: {x: 6.6, y: 0.68}
+    kind: 1
+    tint: {r: 1, g: 1, b: 1, a: 1}
+  - label: BellTower_WestDeck
+    localCenter: {x: 37, y: 6.6}
+    size: {x: 6.2, y: 0.68}
+    kind: 1
+    tint: {r: 1, g: 1, b: 1, a: 1}
+  - label: ShellRoof_MidW
+    localCenter: {x: 48.5, y: 3.16}
+    size: {x: 8, y: 0.68}
+    kind: 1
+    tint: {r: 1, g: 1, b: 1, a: 1}
+  - label: PlazaArchway_Mid
+    localCenter: {x: 61, y: 5}
+    size: {x: 6.4, y: 0.68}
+    kind: 1
+    tint: {r: 1, g: 1, b: 1, a: 1}
+  - label: SecretShelf_BellVault
+    localCenter: {x: 77, y: 5.86}
+    size: {x: 12, y: 0.68}
+    kind: 1
+    tint: {r: 1, g: 1, b: 1, a: 1}
+  - label: SecretRoof_BellVault
+    localCenter: {x: 77, y: 9.74}
+    size: {x: 12, y: 0.68}
+    kind: 1
+    tint: {r: 1, g: 1, b: 1, a: 1}
+  - label: GreatBell_Belfry
+    localCenter: {x: 90, y: 7}
+    size: {x: 6.8, y: 0.68}
+    kind: 1
+    tint: {r: 1, g: 1, b: 1, a: 1}
+  - label: ShellRoof_MidE
+    localCenter: {x: 101.5, y: 3.16}
+    size: {x: 7.8, y: 0.68}
+    kind: 1
+    tint: {r: 1, g: 1, b: 1, a: 1}
+  - label: TownBridge_E
+    localCenter: {x: 113.5, y: 4.8}
+    size: {x: 6.4, y: 0.68}
+    kind: 1
+    tint: {r: 1, g: 1, b: 1, a: 1}
+  - label: BellTower_EastDeck
+    localCenter: {x: 124.5, y: 6.8}
+    size: {x: 6, y: 0.68}
+    kind: 1
+    tint: {r: 1, g: 1, b: 1, a: 1}
+  - label: ShellRoof_East
+    localCenter: {x: 134.5, y: 2.96}
+    size: {x: 7.4, y: 0.68}
+    kind: 1
+    tint: {r: 1, g: 1, b: 1, a: 1}
+  destructibles:
+  - label: Bell_Entry
+    localSurfacePos: {x: 10.2, y: 0}
+    kind: 13
+    maxHits: 2
+    orbDropCount: 2
+    essencePerOrb: 8
+    rewardSilk: 8
+    blocksMovement: 0
+    flipX: 0
+    scale: 1.02
+  - label: Crate_RoofW
+    localSurfacePos: {x: 16.4, y: 3.3}
+    kind: 14
+    maxHits: 1
+    orbDropCount: 1
+    essencePerOrb: 7
+    rewardSilk: 6
+    blocksMovement: 0
+    flipX: 0
+    scale: 0.98
+  - label: Lantern_BridgeW
+    localSurfacePos: {x: 26.6, y: 4.74}
+    kind: 15
+    maxHits: 1
+    orbDropCount: 1
+    essencePerOrb: 7
+    rewardSilk: 7
+    blocksMovement: 0
+    flipX: 0
+    scale: 0.95
+  - label: Bell_MidW
+    localSurfacePos: {x: 49.8, y: 3.5}
+    kind: 13
+    maxHits: 2
+    orbDropCount: 2
+    essencePerOrb: 9
+    rewardSilk: 9
+    blocksMovement: 0
+    flipX: 1
+    scale: 1.06
+  - label: Crate_Plaza
+    localSurfacePos: {x: 58.5, y: 0}
+    kind: 14
+    maxHits: 1
+    orbDropCount: 2
+    essencePerOrb: 8
+    rewardSilk: 7
+    blocksMovement: 0
+    flipX: 0
+    scale: 1
+  - label: Bell_SecretTop
+    localSurfacePos: {x: 77, y: 10.08}
+    kind: 13
+    maxHits: 2
+    orbDropCount: 2
+    essencePerOrb: 9
+    rewardSilk: 9
+    blocksMovement: 0
+    flipX: 0
+    scale: 1.04
+  - label: Lantern_MidE
+    localSurfacePos: {x: 102.8, y: 3.5}
+    kind: 15
+    maxHits: 1
+    orbDropCount: 2
+    essencePerOrb: 8
+    rewardSilk: 7
+    blocksMovement: 0
+    flipX: 1
+    scale: 0.96
+  - label: Crate_East
+    localSurfacePos: {x: 135.8, y: 3.3}
+    kind: 14
+    maxHits: 1
+    orbDropCount: 2
+    essencePerOrb: 8
+    rewardSilk: 7
+    blocksMovement: 0
+    flipX: 1
+    scale: 0.96
+  - label: Bell_Gate
+    localSurfacePos: {x: 140.2, y: 0}
+    kind: 13
+    maxHits: 2
+    orbDropCount: 2
+    essencePerOrb: 9
+    rewardSilk: 9
+    blocksMovement: 0
+    flipX: 0
+    scale: 1
+  hazards: []
+  ambientProps:
+  - label: Bellhart_HangBellW
+    localPos: {x: 16.5, y: 12.6}
+    kind: 5
+    scale: 1.18
+    flipX: 0
+  - label: Bellhart_HangBellMid
+    localPos: {x: 61, y: 12.6}
+    kind: 5
+    scale: 1.24
+    flipX: 1
+  - label: Bellhart_HangBellE
+    localPos: {x: 118, y: 12.6}
+    kind: 5
+    scale: 1.25
+    flipX: 0
+  - label: Bellhart_LanternGlowA
+    localPos: {x: 12.2, y: 2.3}
+    kind: 0
+    scale: 1.05
+    flipX: 0
+  - label: Bellhart_LanternGlowB
+    localPos: {x: 64.5, y: 2.3}
+    kind: 0
+    scale: 1.1
+    flipX: 1
+  - label: Bellhart_LanternGlowC
+    localPos: {x: 138.8, y: 2.3}
+    kind: 0
+    scale: 1.05
+    flipX: 0
+  decors:
+  - label: Bellhart_HouseW
+    localPos: {x: 19.5, y: 0}
+    assetFileName: Stages/Decor_BellhartHouseA.png
+    sortLayer: NearBackground
+    sortOrder: 4
+    scale: 1.15
+    flipX: 0
+    tint: {r: 0.92, g: 0.94, b: 0.98, a: 0.95}
+    swayWithWind: 0
+  - label: Bellhart_PillarW
+    localPos: {x: 31.5, y: 0}
+    assetFileName: Env_StonePillar.png
+    sortLayer: NearBackground
+    sortOrder: 3
+    scale: 1.15
+    flipX: 0
+    tint: {r: 0.62, g: 0.68, b: 0.78, a: 0.92}
+    swayWithWind: 0
+  - label: Bellhart_HouseMidW
+    localPos: {x: 55, y: 0}
+    assetFileName: Stages/Decor_BellhartHouseB.png
+    sortLayer: NearBackground
+    sortOrder: 4
+    scale: 1.18
+    flipX: 0
+    tint: {r: 0.92, g: 0.94, b: 0.98, a: 0.95}
+    swayWithWind: 0
+  - label: Bellhart_HouseMidE
+    localPos: {x: 93.5, y: 0}
+    assetFileName: Stages/Decor_BellhartHouseA.png
+    sortLayer: NearBackground
+    sortOrder: 4
+    scale: 1.18
+    flipX: 1
+    tint: {r: 0.92, g: 0.94, b: 0.98, a: 0.95}
+    swayWithWind: 0
+  - label: Bellhart_PillarE
+    localPos: {x: 110.5, y: 0}
+    assetFileName: Env_StonePillar.png
+    sortLayer: NearBackground
+    sortOrder: 3
+    scale: 1.18
+    flipX: 1
+    tint: {r: 0.62, g: 0.68, b: 0.78, a: 0.92}
+    swayWithWind: 0
+  - label: Bellhart_HouseE
+    localPos: {x: 126.5, y: 0}
+    assetFileName: Stages/Decor_BellhartHouseB.png
+    sortLayer: NearBackground
+    sortOrder: 4
+    scale: 1.15
+    flipX: 0
+    tint: {r: 0.92, g: 0.94, b: 0.98, a: 0.95}
+    swayWithWind: 0
+  - label: Bellhart_StreetLampA
+    localPos: {x: 12.2, y: 0}
+    assetFileName: Stages/Prop_OldLantern.png
+    sortLayer: NearBackground
+    sortOrder: 6
+    scale: 1.05
+    flipX: 0
+    tint: {r: 1, g: 1, b: 1, a: 1}
+    swayWithWind: 0
+  - label: Bellhart_StreetLampMid
+    localPos: {x: 64.5, y: 0}
+    assetFileName: Stages/Prop_OldLantern.png
+    sortLayer: NearBackground
+    sortOrder: 6
+    scale: 1.05
+    flipX: 1
+    tint: {r: 1, g: 1, b: 1, a: 1}
+    swayWithWind: 0
+  - label: Bellhart_StreetLampB
+    localPos: {x: 138.8, y: 0}
+    assetFileName: Stages/Prop_OldLantern.png
+    sortLayer: NearBackground
+    sortOrder: 6
+    scale: 1.05
+    flipX: 1
+    tint: {r: 1, g: 1, b: 1, a: 1}
+    swayWithWind: 0
+  pools:
+  - label: Bellhart_RainPuddleW
+    localBottomCenter: {x: 27.5, y: 0}
+    width: 5.6
+    waterTint: {r: 0.64, g: 0.74, b: 0.88, a: 0.86}
+    glintTint: {r: 0.84, g: 0.9, b: 1, a: 0.52}
+  - label: Bellhart_RainPuddleMid
+    localBottomCenter: {x: 62, y: 0}
+    width: 6
+    waterTint: {r: 0.64, g: 0.74, b: 0.88, a: 0.86}
+    glintTint: {r: 0.84, g: 0.9, b: 1, a: 0.52}
+  - label: Bellhart_RainPuddleE
+    localBottomCenter: {x: 115.5, y: 0}
+    width: 5.8
+    waterTint: {r: 0.64, g: 0.74, b: 0.88, a: 0.86}
+    glintTint: {r: 0.84, g: 0.9, b: 1, a: 0.52}
+  faunaSwarms:
+  - label: Bellhart_LampMothsA
+    localCenter: {x: 12.2, y: 2.6}
+    roamRadius: {x: 2.4, y: 1.2}
+    count: 5
+    colorA: {r: 1, g: 0.82, b: 0.48, a: 0.9}
+    colorB: {r: 0.95, g: 0.92, b: 0.78, a: 0.76}
+  - label: Bellhart_LampMothsMid
+    localCenter: {x: 64.5, y: 2.8}
+    roamRadius: {x: 2.8, y: 1.4}
+    count: 5
+    colorA: {r: 1, g: 0.82, b: 0.48, a: 0.9}
+    colorB: {r: 0.95, g: 0.92, b: 0.78, a: 0.76}
+  - label: Bellhart_LampMothsB
+    localCenter: {x: 138.8, y: 2.6}
+    roamRadius: {x: 2.4, y: 1.2}
+    count: 5
+    colorA: {r: 1, g: 0.82, b: 0.48, a: 0.9}
+    colorB: {r: 0.95, g: 0.92, b: 0.78, a: 0.76}

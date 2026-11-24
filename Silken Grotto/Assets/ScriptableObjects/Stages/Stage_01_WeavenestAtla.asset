@@ -1,0 +1,363 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32e33326fe6caa44592aa4db5b2b63b5, type: 3}
+  m_Name: Stage_01_WeavenestAtla
+  m_EditorClassIdentifier: 
+  stageId: stage_01_weavenest_atla
+  stageIndex: 1
+  displayName: Weavenest Atla
+  subtitle: Ancient Loom of Forgotten Silk
+  backgroundSprite: {fileID: 21300000, guid: 9e1052d0f3db5a742ae07a5c88a0c99b, type: 3}
+  cliffSprite: {fileID: 21300000, guid: b5e105da6a69860439bf19e49dd6b5bb, type: 3}
+  platformSprite: {fileID: 21300000, guid: 73dc4ba8c83248e4fa979e90ffadab02, type: 3}
+  supportArchSprite: {fileID: 21300000, guid: 6e1c18a492dd9de49be2fc11aa2d0487, type: 3}
+  ceilingStalactiteSprite: {fileID: 21300000, guid: ccbb09240a018d54985807eb7ef979c6, type: 3}
+  foregroundFrameSprite: {fileID: 21300000, guid: 24aa5dd2747865f4598ab0fc08bc140c, type: 3}
+  foregroundFrameTint: {r: 0.14, g: 0.16, b: 0.24, a: 0.9}
+  exitGateSprite: {fileID: 21300000, guid: 06edc43caf7972e4084a9780aab0477b, type: 3}
+  entryGateSprite: {fileID: 21300000, guid: 3bceb3642ada41347a28d5300d32e5e1, type: 3}
+  cameraClearColor: {r: 0.09, g: 0.11, b: 0.17, a: 1}
+  godRayTint: {r: 0.84, g: 0.9, b: 1, a: 0.22}
+  showGodRays: 1
+  weatherType: 1
+  useDarkStoneAcoustics: 1
+  stageBgm: {fileID: 8300000, guid: 674249d47513e21408888a0cfc05448b, type: 3}
+  originX: 220
+  stageWidth: 140
+  groundY: 0
+  slipperyGround: 0
+  cameraMinBounds: {x: 220, y: -2.2}
+  cameraMaxBounds: {x: 360, y: 16.5}
+  leftSpawnOffset: {x: 3.6, y: 0.02}
+  rightExitOffset: {x: 137.8, y: 0}
+  exitGateVisual: 1
+  nextStageId: stage_02_shellwood
+  entryGateVisual: 0
+  previousStageId: stage_00_moss_grotto
+  platforms:
+  - label: Step_WestCarved
+    localCenter: {x: 14, y: 2.86}
+    size: {x: 7, y: 0.68}
+    kind: 1
+    tint: {r: 1, g: 1, b: 1, a: 1}
+  - label: SilkLedge_Low
+    localCenter: {x: 23.5, y: 3.8}
+    size: {x: 5.6, y: 0.68}
+    kind: 1
+    tint: {r: 1, g: 1, b: 1, a: 1}
+  - label: SilkLedge_High
+    localCenter: {x: 32, y: 6.6}
+    size: {x: 6.4, y: 0.68}
+    kind: 1
+    tint: {r: 1, g: 1, b: 1, a: 1}
+  - label: WeaverDais_WestMid
+    localCenter: {x: 42, y: 2.86}
+    size: {x: 8, y: 0.68}
+    kind: 1
+    tint: {r: 1, g: 1, b: 1, a: 1}
+  - label: SilkLedge_GapBridge
+    localCenter: {x: 53, y: 4.6}
+    size: {x: 5.8, y: 0.68}
+    kind: 1
+    tint: {r: 1, g: 1, b: 1, a: 1}
+  - label: SecretShelf_Weavenest
+    localCenter: {x: 64, y: 5.86}
+    size: {x: 12, y: 0.68}
+    kind: 1
+    tint: {r: 1, g: 1, b: 1, a: 1}
+  - label: SecretRoof_Weavenest
+    localCenter: {x: 64, y: 9.74}
+    size: {x: 12, y: 0.68}
+    kind: 1
+    tint: {r: 1, g: 1, b: 1, a: 1}
+  - label: LoomBalcony_MidHigh
+    localCenter: {x: 74, y: 7.6}
+    size: {x: 6.8, y: 0.68}
+    kind: 1
+    tint: {r: 1, g: 1, b: 1, a: 1}
+  - label: WeaverCliff_EastMid
+    localCenter: {x: 85, y: 2.86}
+    size: {x: 8.4, y: 0.68}
+    kind: 1
+    tint: {r: 1, g: 1, b: 1, a: 1}
+  - label: SilkSpan_East1
+    localCenter: {x: 96, y: 4.8}
+    size: {x: 6, y: 0.68}
+    kind: 1
+    tint: {r: 1, g: 1, b: 1, a: 1}
+  - label: SilkSpan_EastHigh
+    localCenter: {x: 105.5, y: 7.2}
+    size: {x: 6.4, y: 0.68}
+    kind: 1
+    tint: {r: 1, g: 1, b: 1, a: 1}
+  - label: WeaverDais_East
+    localCenter: {x: 116.5, y: 3.06}
+    size: {x: 7.8, y: 0.68}
+    kind: 1
+    tint: {r: 1, g: 1, b: 1, a: 1}
+  - label: SilkLedge_ExitApproach
+    localCenter: {x: 127.5, y: 4.9}
+    size: {x: 6, y: 0.68}
+    kind: 1
+    tint: {r: 1, g: 1, b: 1, a: 1}
+  destructibles:
+  - label: Spool_Entry
+    localSurfacePos: {x: 10, y: 0}
+    kind: 5
+    maxHits: 1
+    orbDropCount: 1
+    essencePerOrb: 6
+    rewardSilk: 7
+    blocksMovement: 0
+    flipX: 0
+    scale: 1
+  - label: Cocoon_Step
+    localSurfacePos: {x: 15.2, y: 3.2}
+    kind: 6
+    maxHits: 1
+    orbDropCount: 1
+    essencePerOrb: 7
+    rewardSilk: 8
+    blocksMovement: 0
+    flipX: 1
+    scale: 1
+  - label: WebBarrier_WestMid
+    localSurfacePos: {x: 28, y: 0}
+    kind: 7
+    maxHits: 2
+    orbDropCount: 2
+    essencePerOrb: 7
+    rewardSilk: 10
+    blocksMovement: 0
+    flipX: 0
+    scale: 1.08
+  - label: Spool_High
+    localSurfacePos: {x: 32, y: 6.94}
+    kind: 5
+    maxHits: 1
+    orbDropCount: 2
+    essencePerOrb: 8
+    rewardSilk: 9
+    blocksMovement: 0
+    flipX: 1
+    scale: 0.96
+  - label: Cocoon_WestDais
+    localSurfacePos: {x: 43, y: 3.2}
+    kind: 6
+    maxHits: 2
+    orbDropCount: 2
+    essencePerOrb: 7
+    rewardSilk: 9
+    blocksMovement: 0
+    flipX: 0
+    scale: 1.05
+  - label: Spool_SecretTop
+    localSurfacePos: {x: 64, y: 10.08}
+    kind: 5
+    maxHits: 1
+    orbDropCount: 2
+    essencePerOrb: 8
+    rewardSilk: 9
+    blocksMovement: 0
+    flipX: 0
+    scale: 1
+  - label: WebBarrier_MidEast
+    localSurfacePos: {x: 79.5, y: 0}
+    kind: 7
+    maxHits: 2
+    orbDropCount: 2
+    essencePerOrb: 8
+    rewardSilk: 10
+    blocksMovement: 0
+    flipX: 1
+    scale: 1.08
+  - label: Cocoon_EastMid
+    localSurfacePos: {x: 86.2, y: 3.2}
+    kind: 6
+    maxHits: 2
+    orbDropCount: 2
+    essencePerOrb: 8
+    rewardSilk: 9
+    blocksMovement: 0
+    flipX: 0
+    scale: 1.04
+  - label: Spool_EastHigh
+    localSurfacePos: {x: 105.5, y: 7.54}
+    kind: 5
+    maxHits: 1
+    orbDropCount: 2
+    essencePerOrb: 9
+    rewardSilk: 9
+    blocksMovement: 0
+    flipX: 1
+    scale: 0.96
+  - label: Cocoon_EastDais
+    localSurfacePos: {x: 117.8, y: 3.4}
+    kind: 6
+    maxHits: 2
+    orbDropCount: 2
+    essencePerOrb: 8
+    rewardSilk: 9
+    blocksMovement: 0
+    flipX: 0
+    scale: 1.04
+  - label: WebBarrier_Exit
+    localSurfacePos: {x: 129.5, y: 0}
+    kind: 7
+    maxHits: 2
+    orbDropCount: 2
+    essencePerOrb: 9
+    rewardSilk: 10
+    blocksMovement: 0
+    flipX: 1
+    scale: 1.08
+  hazards: []
+  ambientProps:
+  - label: Web_CanopyA
+    localPos: {x: 18, y: 11.4}
+    kind: 2
+    scale: 1.25
+    flipX: 0
+  - label: Web_CanopyB
+    localPos: {x: 48, y: 11.6}
+    kind: 2
+    scale: 1.35
+    flipX: 1
+  - label: Web_CanopyC
+    localPos: {x: 84, y: 11.4}
+    kind: 2
+    scale: 1.3
+    flipX: 0
+  - label: Web_CanopyD
+    localPos: {x: 118, y: 11.6}
+    kind: 2
+    scale: 1.35
+    flipX: 1
+  decors:
+  - label: Weaver_GiantLoomW
+    localPos: {x: 17.5, y: 0}
+    assetFileName: Stages/Decor_WeavenestLoom.png
+    sortLayer: NearBackground
+    sortOrder: 4
+    scale: 1.25
+    flipX: 0
+    tint: {r: 0.86, g: 0.9, b: 0.98, a: 0.95}
+    swayWithWind: 0
+  - label: Weaver_StoneArchMid
+    localPos: {x: 31, y: 0}
+    assetFileName: Stages/Decor_WeavenestArch.png
+    sortLayer: NearBackground
+    sortOrder: 3
+    scale: 1.12
+    flipX: 0
+    tint: {r: 0.82, g: 0.86, b: 0.94, a: 0.92}
+    swayWithWind: 0
+  - label: Weaver_MaskTotemW
+    localPos: {x: 42, y: 3.2}
+    assetFileName: Stages/Decor_WeavenestTotem.png
+    sortLayer: NearBackground
+    sortOrder: 5
+    scale: 1.05
+    flipX: 0
+    tint: {r: 0.9, g: 0.92, b: 0.98, a: 0.96}
+    swayWithWind: 0
+  - label: Weaver_CenterLoom
+    localPos: {x: 74.5, y: 0}
+    assetFileName: Stages/Decor_WeavenestLoom.png
+    sortLayer: NearBackground
+    sortOrder: 4
+    scale: 1.28
+    flipX: 1
+    tint: {r: 0.86, g: 0.9, b: 0.98, a: 0.95}
+    swayWithWind: 0
+  - label: Weaver_EastArchMid
+    localPos: {x: 98, y: 0}
+    assetFileName: Stages/Decor_WeavenestArch.png
+    sortLayer: NearBackground
+    sortOrder: 3
+    scale: 1.18
+    flipX: 1
+    tint: {r: 0.84, g: 0.88, b: 0.96, a: 0.94}
+    swayWithWind: 0
+  - label: Weaver_MaskTotemE
+    localPos: {x: 116.5, y: 3.4}
+    assetFileName: Stages/Decor_WeavenestTotem.png
+    sortLayer: NearBackground
+    sortOrder: 5
+    scale: 1.08
+    flipX: 1
+    tint: {r: 0.9, g: 0.92, b: 0.98, a: 0.96}
+    swayWithWind: 0
+  - label: Weaver_AncientArchExit
+    localPos: {x: 133, y: 0}
+    assetFileName: Stages/Decor_WeavenestArch.png
+    sortLayer: NearBackground
+    sortOrder: 4
+    scale: 1.18
+    flipX: 0
+    tint: {r: 0.84, g: 0.88, b: 0.96, a: 0.94}
+    swayWithWind: 0
+  - label: Weaver_FernCluster
+    localPos: {x: 8.5, y: 0}
+    assetFileName: Env_CurledFerns.png
+    sortLayer: NearBackground
+    sortOrder: 6
+    scale: 0.72
+    flipX: 0
+    tint: {r: 0.45, g: 0.54, b: 0.68, a: 0.9}
+    swayWithWind: 1
+  pools:
+  - label: Weaver_ReflectPoolA
+    localBottomCenter: {x: 21.5, y: 0}
+    width: 5.6
+    waterTint: {r: 0.62, g: 0.74, b: 0.92, a: 0.88}
+    glintTint: {r: 0.82, g: 0.92, b: 1, a: 0.56}
+  - label: Weaver_ReflectPoolB
+    localBottomCenter: {x: 50.5, y: 0}
+    width: 5.6
+    waterTint: {r: 0.62, g: 0.74, b: 0.92, a: 0.88}
+    glintTint: {r: 0.82, g: 0.92, b: 1, a: 0.56}
+  - label: Weaver_ReflectPoolC
+    localBottomCenter: {x: 93.5, y: 0}
+    width: 6
+    waterTint: {r: 0.62, g: 0.74, b: 0.92, a: 0.88}
+    glintTint: {r: 0.82, g: 0.92, b: 1, a: 0.56}
+  - label: Weaver_ReflectPoolD
+    localBottomCenter: {x: 124, y: 0}
+    width: 5.4
+    waterTint: {r: 0.62, g: 0.74, b: 0.92, a: 0.88}
+    glintTint: {r: 0.82, g: 0.92, b: 1, a: 0.56}
+  faunaSwarms:
+  - label: Weavenest_SilkMothsA
+    localCenter: {x: 17.5, y: 2.5}
+    roamRadius: {x: 3.2, y: 1.5}
+    count: 5
+    colorA: {r: 0.88, g: 0.92, b: 1, a: 0.9}
+    colorB: {r: 0.66, g: 0.8, b: 1, a: 0.75}
+  - label: Weavenest_SilkMothsB
+    localCenter: {x: 42, y: 5.2}
+    roamRadius: {x: 3.4, y: 1.6}
+    count: 5
+    colorA: {r: 0.9, g: 0.95, b: 1, a: 0.9}
+    colorB: {r: 0.7, g: 0.84, b: 0.98, a: 0.75}
+  - label: Weavenest_SilkMothsC
+    localCenter: {x: 85, y: 4.8}
+    roamRadius: {x: 3.6, y: 1.6}
+    count: 5
+    colorA: {r: 0.88, g: 0.92, b: 1, a: 0.9}
+    colorB: {r: 0.66, g: 0.8, b: 1, a: 0.75}
+  - label: Weavenest_SilkMothsD
+    localCenter: {x: 116.5, y: 5.4}
+    roamRadius: {x: 3.4, y: 1.6}
+    count: 5
+    colorA: {r: 0.9, g: 0.95, b: 1, a: 0.9}
+    colorB: {r: 0.7, g: 0.84, b: 0.98, a: 0.75}

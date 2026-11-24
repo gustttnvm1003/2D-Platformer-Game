@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1795e6ceb2c5a734bb211439f6b54083, type: 3}
+  m_Name: Enemy_PilgrimHulk
+  m_EditorClassIdentifier: 
+  enemyName: Pilgrim Hulk
+  isElite: 1
+  maxHealth: 58
+  silkEssenceReward: 36
+  orbDropCount: 4
+  patrolSpeed: 1.45
+  chaseSpeed: 2.25
+  patrolDistance: 4
+  idlePauseDuration: 0.25
+  detectRange: 9.4
+  loseTargetRange: 13.5
+  attackRange: 7.4
+  attackDamage: 2
+  attackKnockbackForce: 9
+  windupDuration: 0.35
+  attackActiveDuration: 0.3
+  recoveryDuration: 0.6
+  attackCooldown: 1.05
+  lungeSpeed: 11.4
+  knockbackResistance: 0.72
+  staggerDuration: 0.14

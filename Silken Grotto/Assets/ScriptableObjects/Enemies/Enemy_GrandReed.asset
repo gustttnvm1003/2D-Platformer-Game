@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1795e6ceb2c5a734bb211439f6b54083, type: 3}
+  m_Name: Enemy_GrandReed
+  m_EditorClassIdentifier: 
+  enemyName: Grand Reed
+  isElite: 1
+  maxHealth: 110
+  silkEssenceReward: 110
+  orbDropCount: 10
+  patrolSpeed: 1.85
+  chaseSpeed: 3.25
+  patrolDistance: 4.6
+  idlePauseDuration: 0.7
+  detectRange: 10.8
+  loseTargetRange: 15.5
+  attackRange: 4.15
+  attackDamage: 2
+  attackKnockbackForce: 10.6
+  windupDuration: 0.45
+  attackActiveDuration: 0.34
+  recoveryDuration: 0.54
+  attackCooldown: 0.82
+  lungeSpeed: 11.4
+  knockbackResistance: 0.68
+  staggerDuration: 0.14
