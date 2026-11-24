@@ -1,0 +1,1170 @@
+fileFormatVersion: 2
+guid: 0373f9a1f31a26541bce24a53af301e8
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 119.94
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: furm_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1020
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4191, y: 0.0882}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3535d5e5bca4ae250800000000000000
+      internalID: 5974670092982375251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furm_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 1020
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4191, y: 0.0882}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c99d673fcde09caf0800000000000000
+      internalID: -375752751768479332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furm_Idle_2
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 1020
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4191, y: 0.0882}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c76808a1e43475200800000000000000
+      internalID: 168677513780823676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furm_Idle_3
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 1020
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4191, y: 0.0882}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a487cfba9794ce80800000000000000
+      internalID: -8159229933990214494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furm_Idle_4
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 1020
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4191, y: 0.0882}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b7f7949d9e560ec0800000000000000
+      internalID: -3601086821140269132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furm_Idle_5
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 1020
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4191, y: 0.0882}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7de7effb3fb53b890800000000000000
+      internalID: -7443504656656990505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furm_Idle_6
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 1020
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4191, y: 0.0882}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b40a3bf58eafdfe90800000000000000
+      internalID: -6990155170664177589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furm_Idle_7
+      rect:
+        serializedVersion: 2
+        x: 2380
+        y: 1020
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4191, y: 0.0882}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ee5ea356c7a8a6b0800000000000000
+      internalID: -5284789692469977369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furm_Idle_8
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 1020
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4191, y: 0.0882}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furm_Idle_9
+      rect:
+        serializedVersion: 2
+        x: 3060
+        y: 1020
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4191, y: 0.0882}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furm_Idle_10
+      rect:
+        serializedVersion: 2
+        x: 3400
+        y: 1020
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4191, y: 0.0882}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furm_Idle_11
+      rect:
+        serializedVersion: 2
+        x: 3740
+        y: 1020
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4191, y: 0.0882}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furm_Move_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 680
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4191, y: 0.0882}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dc7815ae2a1634a0800000000000000
+      internalID: -6614070215106331436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furm_Move_1
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 680
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4191, y: 0.0882}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c479ab913720dce0800000000000000
+      internalID: -1382561991584287546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furm_Move_2
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 680
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4191, y: 0.0882}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0585e44e74a21c3d0800000000000000
+      internalID: -3188220572940216240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furm_Move_3
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 680
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4191, y: 0.0882}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc90c59bc15451b50800000000000000
+      internalID: 6563228021633583564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furm_Move_4
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 680
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4191, y: 0.0882}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7194fab136b41c50800000000000000
+      internalID: 6635128475729826171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furm_Move_5
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 680
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4191, y: 0.0882}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83f20df4c7078f3e0800000000000000
+      internalID: -2019740753658368200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furm_Move_6
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 680
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4191, y: 0.0882}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 204b9184b286c8980800000000000000
+      internalID: -8535332658671406078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furm_Move_7
+      rect:
+        serializedVersion: 2
+        x: 2380
+        y: 680
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4191, y: 0.0882}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c76000773145fd880800000000000000
+      internalID: -8584049922167273860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furm_Move_8
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 680
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4191, y: 0.0882}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furm_Move_9
+      rect:
+        serializedVersion: 2
+        x: 3060
+        y: 680
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4191, y: 0.0882}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furm_Move_10
+      rect:
+        serializedVersion: 2
+        x: 3400
+        y: 680
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4191, y: 0.0882}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furm_Move_11
+      rect:
+        serializedVersion: 2
+        x: 3740
+        y: 680
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4191, y: 0.0882}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furm_Atk_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 340
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4191, y: 0.0882}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c56c1136df9a119f0800000000000000
+      internalID: -499431177907485092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furm_Atk_1
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 340
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4191, y: 0.0882}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eda42c26a63150bc0800000000000000
+      internalID: -3817623761482265890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furm_Atk_2
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 340
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4191, y: 0.0882}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b53fb7e30369444b0800000000000000
+      internalID: -5457071714515291301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furm_Atk_3
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 340
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4191, y: 0.0882}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ef35aafad0eea680800000000000000
+      internalID: -8741802595566927900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furm_Atk_4
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 340
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4191, y: 0.0882}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84b62875d166cc6a0800000000000000
+      internalID: -6427650291956290744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furm_Atk_5
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 340
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4191, y: 0.0882}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 981f9b7cbbdfdff30800000000000000
+      internalID: 4611120576448819593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furm_Atk_6
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 340
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4191, y: 0.0882}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a887074a72e9185d0800000000000000
+      internalID: -3061992378535479158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furm_Atk_7
+      rect:
+        serializedVersion: 2
+        x: 2380
+        y: 340
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4191, y: 0.0882}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03e720a548b1e2a50800000000000000
+      internalID: 6498161567601950256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furm_Atk_8
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 340
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4191, y: 0.0882}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furm_Atk_9
+      rect:
+        serializedVersion: 2
+        x: 3060
+        y: 340
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4191, y: 0.0882}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furm_Atk_10
+      rect:
+        serializedVersion: 2
+        x: 3400
+        y: 340
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4191, y: 0.0882}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furm_Atk_11
+      rect:
+        serializedVersion: 2
+        x: 3740
+        y: 340
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4191, y: 0.0882}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furm_Defeat_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4191, y: 0.0882}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53fcc0dd623987060800000000000000
+      internalID: 6951467819973005109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furm_Defeat_1
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 0
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4191, y: 0.0882}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 288c29129c3e3ba50800000000000000
+      internalID: 6535817937235921026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furm_Defeat_2
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 0
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4191, y: 0.0882}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62cf986d6c218f360800000000000000
+      internalID: 7203528249191300134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furm_Defeat_3
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 0
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4191, y: 0.0882}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 842b866e4de521110800000000000000
+      internalID: 1230149916717265480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furm_Defeat_4
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 0
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4191, y: 0.0882}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91ac6e4487552c980800000000000000
+      internalID: -8520153569991144935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furm_Defeat_5
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 0
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4191, y: 0.0882}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddcf53dbb2ac918d0800000000000000
+      internalID: -2875044597892514595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furm_Defeat_6
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 0
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4191, y: 0.0882}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d493e903473e8e370800000000000000
+      internalID: 8352175597129972045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furm_Defeat_7
+      rect:
+        serializedVersion: 2
+        x: 2380
+        y: 0
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4191, y: 0.0882}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25171b47d5da2e500800000000000000
+      internalID: 424091931827597650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furm_Defeat_8
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 0
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4191, y: 0.0882}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furm_Defeat_9
+      rect:
+        serializedVersion: 2
+        x: 3060
+        y: 0
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4191, y: 0.0882}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furm_Defeat_10
+      rect:
+        serializedVersion: 2
+        x: 3400
+        y: 0
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4191, y: 0.0882}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furm_Defeat_11
+      rect:
+        serializedVersion: 2
+        x: 3740
+        y: 0
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4191, y: 0.0882}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      furm_Atk_0: -499431177907485092
+      furm_Atk_1: -3817623761482265890
+      furm_Atk_10: 0
+      furm_Atk_11: 0
+      furm_Atk_2: -5457071714515291301
+      furm_Atk_3: -8741802595566927900
+      furm_Atk_4: -6427650291956290744
+      furm_Atk_5: 4611120576448819593
+      furm_Atk_6: -3061992378535479158
+      furm_Atk_7: 6498161567601950256
+      furm_Atk_8: 0
+      furm_Atk_9: 0
+      furm_Defeat_0: 6951467819973005109
+      furm_Defeat_1: 6535817937235921026
+      furm_Defeat_10: 0
+      furm_Defeat_11: 0
+      furm_Defeat_2: 7203528249191300134
+      furm_Defeat_3: 1230149916717265480
+      furm_Defeat_4: -8520153569991144935
+      furm_Defeat_5: -2875044597892514595
+      furm_Defeat_6: 8352175597129972045
+      furm_Defeat_7: 424091931827597650
+      furm_Defeat_8: 0
+      furm_Defeat_9: 0
+      furm_Idle_0: 5974670092982375251
+      furm_Idle_1: -375752751768479332
+      furm_Idle_10: 0
+      furm_Idle_11: 0
+      furm_Idle_2: 168677513780823676
+      furm_Idle_3: -8159229933990214494
+      furm_Idle_4: -3601086821140269132
+      furm_Idle_5: -7443504656656990505
+      furm_Idle_6: -6990155170664177589
+      furm_Idle_7: -5284789692469977369
+      furm_Idle_8: 0
+      furm_Idle_9: 0
+      furm_Move_0: -6614070215106331436
+      furm_Move_1: -1382561991584287546
+      furm_Move_10: 0
+      furm_Move_11: 0
+      furm_Move_2: -3188220572940216240
+      furm_Move_3: 6563228021633583564
+      furm_Move_4: 6635128475729826171
+      furm_Move_5: -2019740753658368200
+      furm_Move_6: -8535332658671406078
+      furm_Move_7: -8584049922167273860
+      furm_Move_8: 0
+      furm_Move_9: 0
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

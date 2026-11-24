@@ -1,0 +1,1170 @@
+fileFormatVersion: 2
+guid: a590dfd7f08c82a428dfc579033aee62
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 156.27
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pharlid_diver_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1020
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffa04b0feba89b3d0800000000000000
+      internalID: -3190366308328535297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pharlid_diver_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 1020
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd5adc97d97eac6f0800000000000000
+      internalID: -663463331544324643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pharlid_diver_Idle_2
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 1020
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4f9bb8e0b5698760800000000000000
+      internalID: 7460606068209196879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pharlid_diver_Idle_3
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 1020
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d0293d1fdfd6a280800000000000000
+      internalID: -9032285853283966766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pharlid_diver_Idle_4
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 1020
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cddef404118e612f0800000000000000
+      internalID: -1002358706252288548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pharlid_diver_Idle_5
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 1020
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e16d9ca5b1ba794e0800000000000000
+      internalID: -1974921777603029474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pharlid_diver_Idle_6
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 1020
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8ce498538685b250800000000000000
+      internalID: 5959817580579712138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pharlid_diver_Idle_7
+      rect:
+        serializedVersion: 2
+        x: 2380
+        y: 1020
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07d39997443de6a60800000000000000
+      internalID: 7669299506509856112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pharlid_diver_Idle_8
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 1020
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pharlid_diver_Idle_9
+      rect:
+        serializedVersion: 2
+        x: 3060
+        y: 1020
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pharlid_diver_Idle_10
+      rect:
+        serializedVersion: 2
+        x: 3400
+        y: 1020
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pharlid_diver_Idle_11
+      rect:
+        serializedVersion: 2
+        x: 3740
+        y: 1020
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pharlid_diver_Move_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 680
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 241f4771e0dfa3b20800000000000000
+      internalID: 3115080329245028674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pharlid_diver_Move_1
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 680
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abc3d17523db691a0800000000000000
+      internalID: -6803042163189007174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pharlid_diver_Move_2
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 680
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ac34b7d89a892d10800000000000000
+      internalID: 2101363090203622562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pharlid_diver_Move_3
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 680
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26a57bfb5e7459100800000000000000
+      internalID: 114076417657363042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pharlid_diver_Move_4
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 680
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 905bb879c0cdff270800000000000000
+      internalID: 8286583786025235721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pharlid_diver_Move_5
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 680
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fefcda6e8d73328e0800000000000000
+      internalID: -1719469228002783249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pharlid_diver_Move_6
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 680
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fc5e74626dff58f0800000000000000
+      internalID: -549442030481285903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pharlid_diver_Move_7
+      rect:
+        serializedVersion: 2
+        x: 2380
+        y: 680
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8c4157d2491eac40800000000000000
+      internalID: 5525381567701142671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pharlid_diver_Move_8
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 680
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pharlid_diver_Move_9
+      rect:
+        serializedVersion: 2
+        x: 3060
+        y: 680
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pharlid_diver_Move_10
+      rect:
+        serializedVersion: 2
+        x: 3400
+        y: 680
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pharlid_diver_Move_11
+      rect:
+        serializedVersion: 2
+        x: 3740
+        y: 680
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pharlid_diver_Atk_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 340
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6ba4b958ee9c92b0800000000000000
+      internalID: -5576407517816902803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pharlid_diver_Atk_1
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 340
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87ff839331dddc040800000000000000
+      internalID: 4669631463287226232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pharlid_diver_Atk_2
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 340
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65da6d4f010817c30800000000000000
+      internalID: 4355403124959522134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pharlid_diver_Atk_3
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 340
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd6edda20b88d4760800000000000000
+      internalID: 7443756049328105179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pharlid_diver_Atk_4
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 340
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b63e83ae8ac1b910800000000000000
+      internalID: 1851483635804157616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pharlid_diver_Atk_5
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 340
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d20cc89ba4df0220800000000000000
+      internalID: 2454414155408212688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pharlid_diver_Atk_6
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 340
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c41327feb957ee720800000000000000
+      internalID: 2877366524533944652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pharlid_diver_Atk_7
+      rect:
+        serializedVersion: 2
+        x: 2380
+        y: 340
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99a20f69104636470800000000000000
+      internalID: 8386656889084062361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pharlid_diver_Atk_8
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 340
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pharlid_diver_Atk_9
+      rect:
+        serializedVersion: 2
+        x: 3060
+        y: 340
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pharlid_diver_Atk_10
+      rect:
+        serializedVersion: 2
+        x: 3400
+        y: 340
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pharlid_diver_Atk_11
+      rect:
+        serializedVersion: 2
+        x: 3740
+        y: 340
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pharlid_diver_Defeat_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a74a2707ee80220e0800000000000000
+      internalID: -2296263039823731590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pharlid_diver_Defeat_1
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 0
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25c0aaee2b327f360800000000000000
+      internalID: 7203265380417670226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pharlid_diver_Defeat_2
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 0
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc2533fa9b6dea150800000000000000
+      internalID: 5885877856016487117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pharlid_diver_Defeat_3
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 0
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4ea490cba276c8a0800000000000000
+      internalID: -6285210147953004977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pharlid_diver_Defeat_4
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 0
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e01f2f0f6bda1960800000000000000
+      internalID: 7573606993419505894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pharlid_diver_Defeat_5
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 0
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6285d4ac457212480800000000000000
+      internalID: -8925809741346809818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pharlid_diver_Defeat_6
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 0
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2dab8114bf8a9600800000000000000
+      internalID: 475850714192260394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pharlid_diver_Defeat_7
+      rect:
+        serializedVersion: 2
+        x: 2380
+        y: 0
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21d310613d314e390800000000000000
+      internalID: -7790079658115908334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pharlid_diver_Defeat_8
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 0
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pharlid_diver_Defeat_9
+      rect:
+        serializedVersion: 2
+        x: 3060
+        y: 0
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pharlid_diver_Defeat_10
+      rect:
+        serializedVersion: 2
+        x: 3400
+        y: 0
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pharlid_diver_Defeat_11
+      rect:
+        serializedVersion: 2
+        x: 3740
+        y: 0
+        width: 340
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      pharlid_diver_Atk_0: -5576407517816902803
+      pharlid_diver_Atk_1: 4669631463287226232
+      pharlid_diver_Atk_10: 0
+      pharlid_diver_Atk_11: 0
+      pharlid_diver_Atk_2: 4355403124959522134
+      pharlid_diver_Atk_3: 7443756049328105179
+      pharlid_diver_Atk_4: 1851483635804157616
+      pharlid_diver_Atk_5: 2454414155408212688
+      pharlid_diver_Atk_6: 2877366524533944652
+      pharlid_diver_Atk_7: 8386656889084062361
+      pharlid_diver_Atk_8: 0
+      pharlid_diver_Atk_9: 0
+      pharlid_diver_Defeat_0: -2296263039823731590
+      pharlid_diver_Defeat_1: 7203265380417670226
+      pharlid_diver_Defeat_10: 0
+      pharlid_diver_Defeat_11: 0
+      pharlid_diver_Defeat_2: 5885877856016487117
+      pharlid_diver_Defeat_3: -6285210147953004977
+      pharlid_diver_Defeat_4: 7573606993419505894
+      pharlid_diver_Defeat_5: -8925809741346809818
+      pharlid_diver_Defeat_6: 475850714192260394
+      pharlid_diver_Defeat_7: -7790079658115908334
+      pharlid_diver_Defeat_8: 0
+      pharlid_diver_Defeat_9: 0
+      pharlid_diver_Idle_0: -3190366308328535297
+      pharlid_diver_Idle_1: -663463331544324643
+      pharlid_diver_Idle_10: 0
+      pharlid_diver_Idle_11: 0
+      pharlid_diver_Idle_2: 7460606068209196879
+      pharlid_diver_Idle_3: -9032285853283966766
+      pharlid_diver_Idle_4: -1002358706252288548
+      pharlid_diver_Idle_5: -1974921777603029474
+      pharlid_diver_Idle_6: 5959817580579712138
+      pharlid_diver_Idle_7: 7669299506509856112
+      pharlid_diver_Idle_8: 0
+      pharlid_diver_Idle_9: 0
+      pharlid_diver_Move_0: 3115080329245028674
+      pharlid_diver_Move_1: -6803042163189007174
+      pharlid_diver_Move_10: 0
+      pharlid_diver_Move_11: 0
+      pharlid_diver_Move_2: 2101363090203622562
+      pharlid_diver_Move_3: 114076417657363042
+      pharlid_diver_Move_4: 8286583786025235721
+      pharlid_diver_Move_5: -1719469228002783249
+      pharlid_diver_Move_6: -549442030481285903
+      pharlid_diver_Move_7: 5525381567701142671
+      pharlid_diver_Move_8: 0
+      pharlid_diver_Move_9: 0
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
